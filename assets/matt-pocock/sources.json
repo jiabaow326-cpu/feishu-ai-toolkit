@@ -1,0 +1,591 @@
+{
+  "snapshot_date": "2026-10-05",
+  "license_sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+  "notes": [
+    "官方原檔 bytes 完整保留；整理時未執行技能、腳本、安裝器或 Prompt。",
+    "writing-great-skills 已更名為 writing-for-agents，歷史原版與現行替代分別保留。",
+    "writing-fragments、writing-beats、writing-shape 位於官方 in-progress 目錄。",
+    "MIT LICENSE 保留於包根目錄及每個複製的技能目錄。"
+  ],
+  "license": "MIT",
+  "historical_commit": "6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64",
+  "scope": "僅收錄文章涉及的技能、writing-great-skills 的現行替代、官方安裝說明要求的 setup 技能及其同目錄原檔。另補四個被入口技能直接呼叫的共用依賴：grilling、domain-modeling、research、codebase-design。",
+  "files": [
+    {
+      "bytes": 157,
+      "upstream_path": "skills/productivity/grill-me/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/grill-me/SKILL.md",
+      "git_blob_sha": "3947ff9c4ad980d14fc07fccbf659d47c114e81d",
+      "path": "assets/matt-pocock/grill-me/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "grill-me",
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637"
+    },
+    {
+      "bytes": 137,
+      "upstream_path": "skills/productivity/grill-me/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/grill-me/agents/openai.yaml",
+      "git_blob_sha": "4d6fb0c746c5d21364dce5d0cf8c51eab9712e7b",
+      "path": "assets/matt-pocock/grill-me/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "grill-me",
+      "sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+    },
+    {
+      "bytes": 6036,
+      "upstream_path": "skills/engineering/prototype/LOGIC.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/prototype/LOGIC.md",
+      "git_blob_sha": "32be86a0a5d9928db84b3988e55f9debe476ab40",
+      "path": "assets/matt-pocock/prototype/LOGIC.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "prototype",
+      "sha256": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9"
+    },
+    {
+      "bytes": 2931,
+      "upstream_path": "skills/engineering/prototype/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/prototype/SKILL.md",
+      "git_blob_sha": "a0044501fe0d385b4d8575b610188ede9b236ccf",
+      "path": "assets/matt-pocock/prototype/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "prototype",
+      "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3"
+    },
+    {
+      "bytes": 6913,
+      "upstream_path": "skills/engineering/prototype/UI.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/prototype/UI.md",
+      "git_blob_sha": "3977951663490882c2632b40695d9f59a2fe2408",
+      "path": "assets/matt-pocock/prototype/UI.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "prototype",
+      "sha256": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3"
+    },
+    {
+      "bytes": 100,
+      "upstream_path": "skills/engineering/prototype/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/prototype/agents/openai.yaml",
+      "git_blob_sha": "1618b147965bc729b7bf3e8da5f130132067aadc",
+      "path": "assets/matt-pocock/prototype/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "prototype",
+      "sha256": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+    },
+    {
+      "bytes": 894,
+      "upstream_path": "skills/productivity/handoff/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/handoff/SKILL.md",
+      "git_blob_sha": "2eb98a51b97bb5bac461a26ad14828eeac827909",
+      "path": "assets/matt-pocock/handoff/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "handoff",
+      "sha256": "7c62de979fdc7ac32fb5ddb2146156c917f80ee070d30fadc9d40343c4b6ed25"
+    },
+    {
+      "bytes": 141,
+      "upstream_path": "skills/productivity/handoff/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/handoff/agents/openai.yaml",
+      "git_blob_sha": "6e1d8da121beceddc2f9ec7fa8714c1d914dd11a",
+      "path": "assets/matt-pocock/handoff/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "handoff",
+      "sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+    },
+    {
+      "bytes": 247,
+      "upstream_path": "skills/engineering/grill-with-docs/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/grill-with-docs/SKILL.md",
+      "git_blob_sha": "62b9efb6f991d1b229adee7506962f13ced0c499",
+      "path": "assets/matt-pocock/grill-with-docs/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "grill-with-docs",
+      "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+    },
+    {
+      "bytes": 145,
+      "upstream_path": "skills/engineering/grill-with-docs/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/grill-with-docs/agents/openai.yaml",
+      "git_blob_sha": "5dbe2780a51be3e9b118bd7758a73e54a9384e11",
+      "path": "assets/matt-pocock/grill-with-docs/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "grill-with-docs",
+      "sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+    },
+    {
+      "bytes": 11908,
+      "upstream_path": "skills/engineering/wayfinder/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/wayfinder/SKILL.md",
+      "git_blob_sha": "812805b760baf328db0ebdef6f3807e381f97016",
+      "path": "assets/matt-pocock/wayfinder/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "wayfinder",
+      "sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1"
+    },
+    {
+      "bytes": 144,
+      "upstream_path": "skills/engineering/wayfinder/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/wayfinder/agents/openai.yaml",
+      "git_blob_sha": "b37544751e0570f9df8de6c02aef238de8c3e1e0",
+      "path": "assets/matt-pocock/wayfinder/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "wayfinder",
+      "sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073"
+    },
+    {
+      "bytes": 7942,
+      "upstream_path": "skills/engineering/triage/AGENT-BRIEF.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/triage/AGENT-BRIEF.md",
+      "git_blob_sha": "1462fcd9e8cc21921158c296149dc05d9be39d20",
+      "path": "assets/matt-pocock/triage/AGENT-BRIEF.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "triage",
+      "sha256": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f"
+    },
+    {
+      "bytes": 4667,
+      "upstream_path": "skills/engineering/triage/OUT-OF-SCOPE.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/triage/OUT-OF-SCOPE.md",
+      "git_blob_sha": "c9fba2f77ee0619975ec8488c0d4861a0c7e3151",
+      "path": "assets/matt-pocock/triage/OUT-OF-SCOPE.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "triage",
+      "sha256": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d"
+    },
+    {
+      "bytes": 6558,
+      "upstream_path": "skills/engineering/triage/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/triage/SKILL.md",
+      "git_blob_sha": "3fd5617e906cf9b71a6b17424791adb905fc248b",
+      "path": "assets/matt-pocock/triage/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "triage",
+      "sha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf"
+    },
+    {
+      "bytes": 135,
+      "upstream_path": "skills/engineering/triage/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/triage/agents/openai.yaml",
+      "git_blob_sha": "acb366cf0f2527e8925ff1223b77610ac0b1be4c",
+      "path": "assets/matt-pocock/triage/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "triage",
+      "sha256": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+    },
+    {
+      "bytes": 8530,
+      "upstream_path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/diagnosing-bugs/SKILL.md",
+      "git_blob_sha": "1b929e29fb519c26b500d3eda744177986883ac8",
+      "path": "assets/matt-pocock/diagnosing-bugs/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "diagnosing-bugs",
+      "sha256": "9168404abda0967a5d32977e3498cd95fda6807018852f3de736a78357c82b40"
+    },
+    {
+      "bytes": 103,
+      "upstream_path": "skills/engineering/diagnosing-bugs/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/diagnosing-bugs/agents/openai.yaml",
+      "git_blob_sha": "a13a755a77634ce61a649a3a0d905a66d3865b35",
+      "path": "assets/matt-pocock/diagnosing-bugs/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "diagnosing-bugs",
+      "sha256": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b"
+    },
+    {
+      "bytes": 1316,
+      "upstream_path": "skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "git_blob_sha": "243198464a8401a7ba1d63b3708fa43c3d067665",
+      "path": "assets/matt-pocock/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "diagnosing-bugs",
+      "sha256": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+    },
+    {
+      "bytes": 3550,
+      "upstream_path": "skills/engineering/tdd/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/tdd/SKILL.md",
+      "git_blob_sha": "250871ccdfefa7525309acfebda090edf4046882",
+      "path": "assets/matt-pocock/tdd/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "tdd",
+      "sha256": "93ea419b76e9caaf26153b828e984f7c3fb136f4caa67b14af95f32ea965a1cc"
+    },
+    {
+      "bytes": 87,
+      "upstream_path": "skills/engineering/tdd/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/tdd/agents/openai.yaml",
+      "git_blob_sha": "651b838a7663e027b1b8884491e867f26bb9a021",
+      "path": "assets/matt-pocock/tdd/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "tdd",
+      "sha256": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b"
+    },
+    {
+      "bytes": 1481,
+      "upstream_path": "skills/engineering/tdd/mocking.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/tdd/mocking.md",
+      "git_blob_sha": "71cbfee674d93244ce81d1830b930ca9a69200bd",
+      "path": "assets/matt-pocock/tdd/mocking.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "tdd",
+      "sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef"
+    },
+    {
+      "bytes": 2214,
+      "upstream_path": "skills/engineering/tdd/tests.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/tdd/tests.md",
+      "git_blob_sha": "7ab86479f925a1f9e8ba680af33cb3b12e015381",
+      "path": "assets/matt-pocock/tdd/tests.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "tdd",
+      "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+    },
+    {
+      "bytes": 6589,
+      "upstream_path": "skills/engineering/code-review/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/code-review/SKILL.md",
+      "git_blob_sha": "e28d7acbf7b3bb4d7817b7eb5d9c105af03f6ec4",
+      "path": "assets/matt-pocock/code-review/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "code-review",
+      "sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50"
+    },
+    {
+      "bytes": 100,
+      "upstream_path": "skills/engineering/code-review/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/code-review/agents/openai.yaml",
+      "git_blob_sha": "9076774ba327f49068db9273feceda03bfe940fa",
+      "path": "assets/matt-pocock/code-review/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "code-review",
+      "sha256": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352"
+    },
+    {
+      "bytes": 3558,
+      "upstream_path": "skills/in-progress/writing-fragments/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-fragments/SKILL.md",
+      "git_blob_sha": "c7c889b880cf9c8d289119dea5ff240641b615ca",
+      "path": "assets/matt-pocock/writing-fragments/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-fragments",
+      "sha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea"
+    },
+    {
+      "bytes": 140,
+      "upstream_path": "skills/in-progress/writing-fragments/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-fragments/agents/openai.yaml",
+      "git_blob_sha": "be3713e91e3ddc6c71e04e6b512b6ad6502d7cc8",
+      "path": "assets/matt-pocock/writing-fragments/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-fragments",
+      "sha256": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+    },
+    {
+      "bytes": 4855,
+      "upstream_path": "skills/in-progress/writing-beats/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-beats/SKILL.md",
+      "git_blob_sha": "3d3b25b605491adc5c62ae5423127717a94b9632",
+      "path": "assets/matt-pocock/writing-beats/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-beats",
+      "sha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e"
+    },
+    {
+      "bytes": 142,
+      "upstream_path": "skills/in-progress/writing-beats/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-beats/agents/openai.yaml",
+      "git_blob_sha": "e8eaa188d4c70b582eed2d1775fe4c4ea3562b25",
+      "path": "assets/matt-pocock/writing-beats/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-beats",
+      "sha256": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+    },
+    {
+      "bytes": 5922,
+      "upstream_path": "skills/in-progress/writing-shape/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-shape/SKILL.md",
+      "git_blob_sha": "02f2866d13e72504e010f2ad3458eb9b36b876db",
+      "path": "assets/matt-pocock/writing-shape/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-shape",
+      "sha256": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72"
+    },
+    {
+      "bytes": 144,
+      "upstream_path": "skills/in-progress/writing-shape/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/in-progress/writing-shape/agents/openai.yaml",
+      "git_blob_sha": "87e0c736be148002f9db275258cd2f405643ad7b",
+      "path": "assets/matt-pocock/writing-shape/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-shape",
+      "sha256": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd"
+    },
+    {
+      "bytes": 2629,
+      "upstream_path": "skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/writing-for-agents/SKILL-MECHANICS.md",
+      "git_blob_sha": "9cdbdb22aadc438755392216e75ad9a14cc9832e",
+      "path": "assets/matt-pocock/writing-for-agents/SKILL-MECHANICS.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-for-agents",
+      "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059"
+    },
+    {
+      "bytes": 10886,
+      "upstream_path": "skills/productivity/writing-for-agents/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/writing-for-agents/SKILL.md",
+      "git_blob_sha": "a37608daf6e835e767deecfb498facecaaba82ba",
+      "path": "assets/matt-pocock/writing-for-agents/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-for-agents",
+      "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a"
+    },
+    {
+      "bytes": 102,
+      "upstream_path": "skills/productivity/writing-for-agents/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/writing-for-agents/agents/openai.yaml",
+      "git_blob_sha": "079c933b75743dec18b5d0c01006def20b6aad26",
+      "path": "assets/matt-pocock/writing-for-agents/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "writing-for-agents",
+      "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+    },
+    {
+      "bytes": 6847,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "git_blob_sha": "c0d850b976fc47d2c5807e8b0f50a2c03e8a29ab",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/SKILL.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "9a0c21694be19fa3eefc39343355d3af7414716ba364882c7432c2f821eac3e9"
+    },
+    {
+      "bytes": 152,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/agents/openai.yaml",
+      "git_blob_sha": "65a0da8128c98051183235e490767a8065310868",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/agents/openai.yaml",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939"
+    },
+    {
+      "bytes": 2042,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/domain.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/domain.md",
+      "git_blob_sha": "4032de016c1e91119d33d477633e2b8f265f4195",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/domain.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9"
+    },
+    {
+      "bytes": 3731,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md",
+      "git_blob_sha": "b258aeb3c44420a2464b72ba228b77b4b3abbaea",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-github.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325"
+    },
+    {
+      "bytes": 3809,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "git_blob_sha": "251035a6d74b4af8d68f066b8d7f1cef90904570",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "ea175f73d193b3f55819c0ed9bbccf6ee0e70ad8f928e3d7607596c53380acd6"
+    },
+    {
+      "bytes": 1810,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/issue-tracker-local.md",
+      "git_blob_sha": "0209a19af92c9c485cf3acc3d9e253171517ea17",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-local.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e"
+    },
+    {
+      "bytes": 1045,
+      "upstream_path": "skills/engineering/setup-matt-pocock-skills/triage-labels.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/setup-matt-pocock-skills/triage-labels.md",
+      "git_blob_sha": "b716855d485f3865f9dfde2a82141721f065b2e7",
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/triage-labels.md",
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "skill": "setup-matt-pocock-skills",
+      "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
+    },
+    {
+      "bytes": 9414,
+      "status": "historical_pre_rename",
+      "upstream_path": "skills/productivity/writing-great-skills/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64/skills/productivity/writing-great-skills/SKILL.md",
+      "path": "assets/matt-pocock/writing-great-skills/SKILL.md",
+      "commit": "6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64",
+      "skill": "writing-great-skills",
+      "sha256": "4d6ccbc3760b1bd4107c495a79872286ea69494003f3b0a719fc95b147457061"
+    },
+    {
+      "bytes": 18488,
+      "status": "historical_pre_rename",
+      "upstream_path": "skills/productivity/writing-great-skills/GLOSSARY.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64/skills/productivity/writing-great-skills/GLOSSARY.md",
+      "path": "assets/matt-pocock/writing-great-skills/GLOSSARY.md",
+      "commit": "6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64",
+      "skill": "writing-great-skills",
+      "sha256": "cccd684c73fb7a06f523497b0121765f92d2b33d6ef9c51602294849233451d6"
+    },
+    {
+      "bytes": 150,
+      "status": "historical_pre_rename",
+      "upstream_path": "skills/productivity/writing-great-skills/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64/skills/productivity/writing-great-skills/agents/openai.yaml",
+      "path": "assets/matt-pocock/writing-great-skills/agents/openai.yaml",
+      "commit": "6bcbcb09e2f1ed5fa20b4e890c732ecbb58c6b64",
+      "skill": "writing-great-skills",
+      "sha256": "b3c555d2654ec61aed78f8435f583c6a0cd6bf980d71317724682ad20075c33d"
+    },
+    {
+      "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+      "status": "required_dependency",
+      "git_blob_sha": "8ca78c6d8f901aab0c5a1f896034b70e666ff2a3",
+      "bytes": 1987,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/productivity/grilling/SKILL.md",
+      "skill": "grilling",
+      "path": "assets/matt-pocock/grilling/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/grilling/SKILL.md"
+    },
+    {
+      "sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
+      "status": "required_dependency",
+      "git_blob_sha": "ddbdb96139c0c1dfe6bca698f39d0465674b8a39",
+      "bytes": 113,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/productivity/grilling/agents/openai.yaml",
+      "skill": "grilling",
+      "path": "assets/matt-pocock/grilling/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/productivity/grilling/agents/openai.yaml"
+    },
+    {
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "status": "required_dependency",
+      "git_blob_sha": "d7e61f30a9fd8ca70d9ee68f019c2a9ebf2d13f7",
+      "bytes": 2733,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "skill": "domain-modeling",
+      "path": "assets/matt-pocock/domain-modeling/ADR-FORMAT.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/domain-modeling/ADR-FORMAT.md"
+    },
+    {
+      "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+      "status": "required_dependency",
+      "git_blob_sha": "9c0b4c7a2e8507c23cbb5e0baa66d81699321cc6",
+      "bytes": 2300,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/domain-modeling/GLOSSARY-FORMAT.md",
+      "skill": "domain-modeling",
+      "path": "assets/matt-pocock/domain-modeling/GLOSSARY-FORMAT.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/domain-modeling/GLOSSARY-FORMAT.md"
+    },
+    {
+      "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+      "status": "required_dependency",
+      "git_blob_sha": "a4438c6879c517d1a08e2b5fbca049b632688dfe",
+      "bytes": 3346,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/domain-modeling/SKILL.md",
+      "skill": "domain-modeling",
+      "path": "assets/matt-pocock/domain-modeling/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b",
+      "status": "required_dependency",
+      "git_blob_sha": "7f1522d2f11506ee205275ab7c282aa52366ecf6",
+      "bytes": 101,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/domain-modeling/agents/openai.yaml",
+      "skill": "domain-modeling",
+      "path": "assets/matt-pocock/domain-modeling/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/domain-modeling/agents/openai.yaml"
+    },
+    {
+      "sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
+      "status": "required_dependency",
+      "git_blob_sha": "fecee97e9457ba039678d2fcf1b1bc9fca78307d",
+      "bytes": 794,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/research/SKILL.md",
+      "skill": "research",
+      "path": "assets/matt-pocock/research/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/research/SKILL.md"
+    },
+    {
+      "sha256": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d",
+      "status": "required_dependency",
+      "git_blob_sha": "e18b96ca0ccc1003889d5d6991386207c2454bc2",
+      "bytes": 94,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/research/agents/openai.yaml",
+      "skill": "research",
+      "path": "assets/matt-pocock/research/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/research/agents/openai.yaml"
+    },
+    {
+      "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+      "status": "required_dependency",
+      "git_blob_sha": "cd94075cfd754d147555c5d747a16431ed4c7dd8",
+      "bytes": 2553,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/codebase-design/DEEPENING.md",
+      "skill": "codebase-design",
+      "path": "assets/matt-pocock/codebase-design/DEEPENING.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/codebase-design/DEEPENING.md"
+    },
+    {
+      "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+      "status": "required_dependency",
+      "git_blob_sha": "d0990138c35c800bd821289a73115e52680c1620",
+      "bytes": 2665,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/codebase-design/DESIGN-IT-TWICE.md",
+      "skill": "codebase-design",
+      "path": "assets/matt-pocock/codebase-design/DESIGN-IT-TWICE.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/codebase-design/DESIGN-IT-TWICE.md"
+    },
+    {
+      "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+      "status": "required_dependency",
+      "git_blob_sha": "3f63c8146dd2604b419c929e9876b90c30d410e9",
+      "bytes": 6446,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/codebase-design/SKILL.md",
+      "skill": "codebase-design",
+      "path": "assets/matt-pocock/codebase-design/SKILL.md",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/codebase-design/SKILL.md"
+    },
+    {
+      "sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
+      "status": "required_dependency",
+      "git_blob_sha": "3180715edb37f6e96bec42f92f00169faa8886ef",
+      "bytes": 102,
+      "commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "upstream_path": "skills/engineering/codebase-design/agents/openai.yaml",
+      "skill": "codebase-design",
+      "path": "assets/matt-pocock/codebase-design/agents/openai.yaml",
+      "source_url": "https://raw.githubusercontent.com/mattpocock/skills/24fe0ef7737efae15c87225755e9f6f5965e4888/skills/engineering/codebase-design/agents/openai.yaml"
+    }
+  ],
+  "rename_commit": "1fc6573e0e300118ce342fb9365521c9c34eefd4",
+  "current_commit": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+  "license_path": "assets/matt-pocock/LICENSE",
+  "upstream_repository": "https://github.com/mattpocock/skills"
+}

@@ -1,0 +1,810 @@
+{
+  "updated_at": "2026-10-05",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 39,
+      "sha256": "d6439973d8a506f44142877efa1b34b8f7d904803a04bf61a03ab338883a8e2c"
+    },
+    {
+      "path": "assets/claude-output-styles/beginner-tech-translator.md",
+      "bytes": 2112,
+      "sha256": "a65822020cc911dd0cb7dfcc05d34637eaa3cf9f0a3ebe068f729ed5e85921e1"
+    },
+    {
+      "path": "assets/claude-output-styles/engineer-tldr.md",
+      "bytes": 1611,
+      "sha256": "5e1eebad0d21fbd6318e17fe5e80abb36b78264e0c22075e075aa86734a4192e"
+    },
+    {
+      "path": "assets/claude-output-styles/output-styles-pack.zip",
+      "bytes": 4005,
+      "sha256": "62ebac37d50b5a31bb989b9b50ae032879e3ccd1c442326d20673d7af6400edf"
+    },
+    {
+      "path": "assets/claude-output-styles/pm-ste100-brief.md",
+      "bytes": 2197,
+      "sha256": "ffbc13a6083fba36510461a724d163a3089251af2f04cdccbb988e37e7bd3f8a"
+    },
+    {
+      "path": "assets/cross-model-review/codex-peer-review.zip",
+      "bytes": 6679,
+      "sha256": "3228b196f074bac39a1a19365ed184ebd3e91c0eb4d1de28f4779f3630d37f13"
+    },
+    {
+      "path": "assets/cross-model-review/codex-review-gate.py",
+      "bytes": 6246,
+      "sha256": "c83dfdcf06f83e9d773b391d1cfdfd6d66fe7d2322517f3326a8be0e541023b4"
+    },
+    {
+      "path": "assets/cross-model-review/downloaded/codex-peer-review/SKILL.md",
+      "bytes": 15536,
+      "sha256": "0912a03fbef1ef64e9d33b03e28839cb6aedeec2800b49c6a1e9ec7f6856c775"
+    },
+    {
+      "path": "assets/cross-model-review/inline/codex-peer-review/SKILL.md",
+      "bytes": 15513,
+      "sha256": "79f0e6017418d57b48e3dce686e5971c64bacf43be4396517fc2ca27b2ef150a"
+    },
+    {
+      "path": "assets/cross-model-review/inline/codex-review-gate.py",
+      "bytes": 6029,
+      "sha256": "4030287cc4aae9f8b7718e00aaaab92d6bfbc930c34e02b43b5db2ed065c496c"
+    },
+    {
+      "path": "assets/cross-model-review/README.md",
+      "bytes": 1006,
+      "sha256": "bf1861ddb871433aeb6218f131cb50fd030dcde3067181bb9a94bf9671d6da1c"
+    },
+    {
+      "path": "assets/cross-model-review/sources.json",
+      "bytes": 2313,
+      "sha256": "a8cc56e59bb3df079e495c915a404679071778f7063a7e24667fef2cfe1b4973"
+    },
+    {
+      "path": "assets/matt-pocock/code-review/agents/openai.yaml",
+      "bytes": 100,
+      "sha256": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352"
+    },
+    {
+      "path": "assets/matt-pocock/code-review/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/code-review/SKILL.md",
+      "bytes": 6589,
+      "sha256": "47f4e52c21694def9c7c11cbfbf891ca35eac7a93e395797515be3c8a409ae50"
+    },
+    {
+      "path": "assets/matt-pocock/codebase-design/agents/openai.yaml",
+      "bytes": 102,
+      "sha256": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+    },
+    {
+      "path": "assets/matt-pocock/codebase-design/DEEPENING.md",
+      "bytes": 2553,
+      "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1"
+    },
+    {
+      "path": "assets/matt-pocock/codebase-design/DESIGN-IT-TWICE.md",
+      "bytes": 2665,
+      "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010"
+    },
+    {
+      "path": "assets/matt-pocock/codebase-design/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/codebase-design/SKILL.md",
+      "bytes": 6446,
+      "sha256": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+    },
+    {
+      "path": "assets/matt-pocock/diagnosing-bugs/agents/openai.yaml",
+      "bytes": 103,
+      "sha256": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b"
+    },
+    {
+      "path": "assets/matt-pocock/diagnosing-bugs/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/diagnosing-bugs/scripts/hitl-loop.template.sh",
+      "bytes": 1316,
+      "sha256": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+    },
+    {
+      "path": "assets/matt-pocock/diagnosing-bugs/SKILL.md",
+      "bytes": 8530,
+      "sha256": "9168404abda0967a5d32977e3498cd95fda6807018852f3de736a78357c82b40"
+    },
+    {
+      "path": "assets/matt-pocock/domain-modeling/ADR-FORMAT.md",
+      "bytes": 2733,
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0"
+    },
+    {
+      "path": "assets/matt-pocock/domain-modeling/agents/openai.yaml",
+      "bytes": 101,
+      "sha256": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+    },
+    {
+      "path": "assets/matt-pocock/domain-modeling/GLOSSARY-FORMAT.md",
+      "bytes": 2300,
+      "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801"
+    },
+    {
+      "path": "assets/matt-pocock/domain-modeling/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/domain-modeling/SKILL.md",
+      "bytes": 3346,
+      "sha256": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+    },
+    {
+      "path": "assets/matt-pocock/grill-me/agents/openai.yaml",
+      "bytes": 137,
+      "sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+    },
+    {
+      "path": "assets/matt-pocock/grill-me/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/grill-me/SKILL.md",
+      "bytes": 157,
+      "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637"
+    },
+    {
+      "path": "assets/matt-pocock/grill-with-docs/agents/openai.yaml",
+      "bytes": 145,
+      "sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+    },
+    {
+      "path": "assets/matt-pocock/grill-with-docs/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/grill-with-docs/SKILL.md",
+      "bytes": 247,
+      "sha256": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+    },
+    {
+      "path": "assets/matt-pocock/grilling/agents/openai.yaml",
+      "bytes": 113,
+      "sha256": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+    },
+    {
+      "path": "assets/matt-pocock/grilling/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/grilling/SKILL.md",
+      "bytes": 1987,
+      "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2"
+    },
+    {
+      "path": "assets/matt-pocock/handoff/agents/openai.yaml",
+      "bytes": 141,
+      "sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28"
+    },
+    {
+      "path": "assets/matt-pocock/handoff/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/handoff/SKILL.md",
+      "bytes": 894,
+      "sha256": "7c62de979fdc7ac32fb5ddb2146156c917f80ee070d30fadc9d40343c4b6ed25"
+    },
+    {
+      "path": "assets/matt-pocock/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/prototype/agents/openai.yaml",
+      "bytes": 100,
+      "sha256": "5af65e43ab41a350436697b81e27b7f848d36782043b73c322bb2c9fa9cc55dc"
+    },
+    {
+      "path": "assets/matt-pocock/prototype/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/prototype/LOGIC.md",
+      "bytes": 6036,
+      "sha256": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9"
+    },
+    {
+      "path": "assets/matt-pocock/prototype/SKILL.md",
+      "bytes": 2931,
+      "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3"
+    },
+    {
+      "path": "assets/matt-pocock/prototype/UI.md",
+      "bytes": 6913,
+      "sha256": "723211e878acbc7b6ff09755263f3295cde724ba902ff0064da41eed51d45ad3"
+    },
+    {
+      "path": "assets/matt-pocock/README.md",
+      "bytes": 855,
+      "sha256": "199cf026ae73ac53716ba2a50510e4b16fe1705915a05289327320f292be5d57"
+    },
+    {
+      "path": "assets/matt-pocock/research/agents/openai.yaml",
+      "bytes": 94,
+      "sha256": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d"
+    },
+    {
+      "path": "assets/matt-pocock/research/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/research/SKILL.md",
+      "bytes": 794,
+      "sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/agents/openai.yaml",
+      "bytes": 152,
+      "sha256": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/domain.md",
+      "bytes": 2042,
+      "sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-github.md",
+      "bytes": 3731,
+      "sha256": "afd6852a80185217bd28aa5cbe456bef1e85be25be7bd1fba382d5b8ee428325"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-gitlab.md",
+      "bytes": 3809,
+      "sha256": "ea175f73d193b3f55819c0ed9bbccf6ee0e70ad8f928e3d7607596c53380acd6"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/issue-tracker-local.md",
+      "bytes": 1810,
+      "sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/SKILL.md",
+      "bytes": 6847,
+      "sha256": "9a0c21694be19fa3eefc39343355d3af7414716ba364882c7432c2f821eac3e9"
+    },
+    {
+      "path": "assets/matt-pocock/setup-matt-pocock-skills/triage-labels.md",
+      "bytes": 1045,
+      "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d"
+    },
+    {
+      "path": "assets/matt-pocock/sources.json",
+      "bytes": 34456,
+      "sha256": "a985c0107bf86195b4b051a018f0a0a85359fd7174b283f7f653959fa910d4ac"
+    },
+    {
+      "path": "assets/matt-pocock/tdd/agents/openai.yaml",
+      "bytes": 87,
+      "sha256": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b"
+    },
+    {
+      "path": "assets/matt-pocock/tdd/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/tdd/mocking.md",
+      "bytes": 1481,
+      "sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef"
+    },
+    {
+      "path": "assets/matt-pocock/tdd/SKILL.md",
+      "bytes": 3550,
+      "sha256": "93ea419b76e9caaf26153b828e984f7c3fb136f4caa67b14af95f32ea965a1cc"
+    },
+    {
+      "path": "assets/matt-pocock/tdd/tests.md",
+      "bytes": 2214,
+      "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a"
+    },
+    {
+      "path": "assets/matt-pocock/triage/AGENT-BRIEF.md",
+      "bytes": 7942,
+      "sha256": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f"
+    },
+    {
+      "path": "assets/matt-pocock/triage/agents/openai.yaml",
+      "bytes": 135,
+      "sha256": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c"
+    },
+    {
+      "path": "assets/matt-pocock/triage/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/triage/OUT-OF-SCOPE.md",
+      "bytes": 4667,
+      "sha256": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d"
+    },
+    {
+      "path": "assets/matt-pocock/triage/SKILL.md",
+      "bytes": 6558,
+      "sha256": "917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf"
+    },
+    {
+      "path": "assets/matt-pocock/wayfinder/agents/openai.yaml",
+      "bytes": 144,
+      "sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073"
+    },
+    {
+      "path": "assets/matt-pocock/wayfinder/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/wayfinder/SKILL.md",
+      "bytes": 11908,
+      "sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1"
+    },
+    {
+      "path": "assets/matt-pocock/writing-beats/agents/openai.yaml",
+      "bytes": 142,
+      "sha256": "ddaef01da61d8e3c5f482c4403033c20cf5823f08a1dbf1d4c871670831d01e2"
+    },
+    {
+      "path": "assets/matt-pocock/writing-beats/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/writing-beats/SKILL.md",
+      "bytes": 4855,
+      "sha256": "a96abafa2372eede8267d770138b322d6125da8adaa7ccf0a5e08e4ee13ee71e"
+    },
+    {
+      "path": "assets/matt-pocock/writing-for-agents/agents/openai.yaml",
+      "bytes": 102,
+      "sha256": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+    },
+    {
+      "path": "assets/matt-pocock/writing-for-agents/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/writing-for-agents/SKILL-MECHANICS.md",
+      "bytes": 2629,
+      "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059"
+    },
+    {
+      "path": "assets/matt-pocock/writing-for-agents/SKILL.md",
+      "bytes": 10886,
+      "sha256": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a"
+    },
+    {
+      "path": "assets/matt-pocock/writing-fragments/agents/openai.yaml",
+      "bytes": 140,
+      "sha256": "81167f25ee8ea1bb4b4958f12b6702ea972ad31b05e03ec91e39fa4bae0c2641"
+    },
+    {
+      "path": "assets/matt-pocock/writing-fragments/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/writing-fragments/SKILL.md",
+      "bytes": 3558,
+      "sha256": "298b0edd23df229183630de592ed8aa4289233560f2040691f6eb77caeaad4ea"
+    },
+    {
+      "path": "assets/matt-pocock/writing-great-skills/agents/openai.yaml",
+      "bytes": 150,
+      "sha256": "b3c555d2654ec61aed78f8435f583c6a0cd6bf980d71317724682ad20075c33d"
+    },
+    {
+      "path": "assets/matt-pocock/writing-great-skills/GLOSSARY.md",
+      "bytes": 18488,
+      "sha256": "cccd684c73fb7a06f523497b0121765f92d2b33d6ef9c51602294849233451d6"
+    },
+    {
+      "path": "assets/matt-pocock/writing-great-skills/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/writing-great-skills/SKILL.md",
+      "bytes": 9414,
+      "sha256": "4d6ccbc3760b1bd4107c495a79872286ea69494003f3b0a719fc95b147457061"
+    },
+    {
+      "path": "assets/matt-pocock/writing-shape/agents/openai.yaml",
+      "bytes": 144,
+      "sha256": "56de45430e23104ff178415f5ecf7821d51a9cfabd8814b1607ebf39da2ef5cd"
+    },
+    {
+      "path": "assets/matt-pocock/writing-shape/LICENSE",
+      "bytes": 1068,
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
+    },
+    {
+      "path": "assets/matt-pocock/writing-shape/SKILL.md",
+      "bytes": 5922,
+      "sha256": "f5e6c57bdd85178ace4a260c92f46da6b64ddee18215b461d875739c68976f72"
+    },
+    {
+      "path": "categories/automation.md",
+      "bytes": 2091,
+      "sha256": "d346b601c5a0f4f87c4eef41bd521a3726510de26c8c0bbb5458375457351547"
+    },
+    {
+      "path": "categories/coding.md",
+      "bytes": 1698,
+      "sha256": "440e8d79f786c22f0bdb594e8a45618dcf8609b9427791bb957203ee99039711"
+    },
+    {
+      "path": "categories/communication.md",
+      "bytes": 895,
+      "sha256": "7e460c804f83a609c3e6b4fe2b46c689703318c0eeefd3e86ad981c1cc854cc3"
+    },
+    {
+      "path": "categories/context.md",
+      "bytes": 426,
+      "sha256": "315cf7954be3fbe11680a7d3c0dc36df0e2cd23e4bf12edafb50ac6ff14706d4"
+    },
+    {
+      "path": "categories/instructions.md",
+      "bytes": 969,
+      "sha256": "7f23bff1c3638d371e163111f4862d621459fbc92296ad75b0b746056c0a36a0"
+    },
+    {
+      "path": "categories/planning.md",
+      "bytes": 1094,
+      "sha256": "15f422a64c5bc310ac3aab11faf7ba06c4fa9f2d858710647fd983f095b78ea6"
+    },
+    {
+      "path": "categories/routing.md",
+      "bytes": 1179,
+      "sha256": "2d7219c25f4e807e58cd72a67937d3efb55f57893a6314dc45026551f7bb7145"
+    },
+    {
+      "path": "categories/security.md",
+      "bytes": 719,
+      "sha256": "524c29f91828a4955daf762bd179d915adf29b3b55a7e999b5985db6c7954364"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 549,
+      "sha256": "40bb98651929c693f86b7856d3cfb6e0afc903de611a4217dd481ee3d649bf61"
+    },
+    {
+      "path": "data/tools.json",
+      "bytes": 107608,
+      "sha256": "03d5f453caed343ae2123d389ac852cd55115a9ee9b0a36dc169b0f42bbde6bd"
+    },
+    {
+      "path": "guides/agent-ready-product.md",
+      "bytes": 2721,
+      "sha256": "2e90a7099c78e5158505e1cb044053d51f46225b87030f438a9d8e615032bcfe"
+    },
+    {
+      "path": "guides/ai-builder.md",
+      "bytes": 2764,
+      "sha256": "7f1cbffe20ea8d768b1e29e901e2c3d06b75af716fb2175f3610ef9d033cd24d"
+    },
+    {
+      "path": "guides/ai-instructions-rebuild.md",
+      "bytes": 3022,
+      "sha256": "1947d483f823bcdde0a720e7afcc6f76ad24a618d5f2adb2d8ae0d0328be3923"
+    },
+    {
+      "path": "guides/ai-routing-system.md",
+      "bytes": 2493,
+      "sha256": "cc8f96b77e93d91394ffca8b55d39584be2dd6fd25577055b89e4cee7f544213"
+    },
+    {
+      "path": "guides/api-key-blast-radius.md",
+      "bytes": 2636,
+      "sha256": "6bd53686d04098ad93b5046dbe4a92e2187b5598097b422303f3ea249be80232"
+    },
+    {
+      "path": "guides/astra-experience.md",
+      "bytes": 2123,
+      "sha256": "f266ed89e99af92b589a20fd4abe8fe9e2a241a777b07952c94b4f74b95b9ef3"
+    },
+    {
+      "path": "guides/automation-choice.md",
+      "bytes": 3669,
+      "sha256": "ad42bd6ba7a17373a6202c1a3fe038c2ca42b31fa29482c95a2d33dbbda22bd4"
+    },
+    {
+      "path": "guides/brownfield-safe-change.md",
+      "bytes": 4281,
+      "sha256": "7bbf5aebeddcd4ca9161e265cc0b7caf3b2b7214c38cc0ed2875d1693585371d"
+    },
+    {
+      "path": "guides/chatgpt-chrome.md",
+      "bytes": 3489,
+      "sha256": "fde38759142973d1956f0f1b2c1f70837df66032beded8c06f7c011452f4b5b8"
+    },
+    {
+      "path": "guides/claude-hooks.md",
+      "bytes": 4354,
+      "sha256": "07306caa6e0d26bc8b019c5391727c813b1e03d6822a40de59ebba6ea587b35a"
+    },
+    {
+      "path": "guides/claude-md-checkup.md",
+      "bytes": 1730,
+      "sha256": "8886e10644c213be4a4367ea33b98878231e4c2800c7bf2a560f747826eb57ac"
+    },
+    {
+      "path": "guides/claude-output-styles.md",
+      "bytes": 3329,
+      "sha256": "d2cb0926dce0c8067effb342112e82a2c100b6f140dde0247aeb66ea6d5580aa"
+    },
+    {
+      "path": "guides/codex-security-bridge.md",
+      "bytes": 3479,
+      "sha256": "86e11d0427c8c68fea0eacdae6ee0a5738e8eb7e96f7039773b3d817cc59771a"
+    },
+    {
+      "path": "guides/codex-task-command.md",
+      "bytes": 2224,
+      "sha256": "adab7a46b44c1a4a626e2f7651a918b45b2b4b638757310fffbb3add12d2ff09"
+    },
+    {
+      "path": "guides/codex-workflow-council.md",
+      "bytes": 2511,
+      "sha256": "1c7b4dcb22af6cb739f06a10ce2cb00d0cccdb21dc25f1e0a367fbcbc77e5b4c"
+    },
+    {
+      "path": "guides/cross-model-review.md",
+      "bytes": 3502,
+      "sha256": "49b524c1515b255c726c2464cd4f8cf6368127b8c86ccdc3021757432b5c0728"
+    },
+    {
+      "path": "guides/dynamic-workflows.md",
+      "bytes": 3783,
+      "sha256": "7680ecca88f570e802479a9b1d2162ea33338a2980b339c8f0e9ea5c9165d3e9"
+    },
+    {
+      "path": "guides/enterprise-ai-implementation.md",
+      "bytes": 5152,
+      "sha256": "ca3ab8559e2c539bc0ed751442e14d2961c088f85af43a6a46dd76d93e4553f2"
+    },
+    {
+      "path": "guides/goal-taste.md",
+      "bytes": 2235,
+      "sha256": "2334b7344873e405b98790aae847965491e3de2676b4176fd2e6eaf489064de7"
+    },
+    {
+      "path": "guides/graph-workflow.md",
+      "bytes": 3615,
+      "sha256": "308b92a42761a4216517d2f797e66c3383b7554392b61f8f599e164b600fc3db"
+    },
+    {
+      "path": "guides/html-workpage.md",
+      "bytes": 2195,
+      "sha256": "dd91b1b13bfaa4f2bbf3d7331a645d308c574021eadab30fab684076fccd20d2"
+    },
+    {
+      "path": "guides/human-sop-agentic-workflow.md",
+      "bytes": 2774,
+      "sha256": "84c3dfc933b25313c73cca9cefc043d55695fc9e014f8bc914786cd0ddef7411"
+    },
+    {
+      "path": "guides/loop-engineering.md",
+      "bytes": 2358,
+      "sha256": "20f60036992c470bad6eba5ddf5d665db23f7d926655ce700612249a21b2f07c"
+    },
+    {
+      "path": "guides/matt-pocock-workflow.md",
+      "bytes": 7905,
+      "sha256": "480a069f95551f391e4863b9f31f83a178dd9e1b7e5abf33ebe8859ddb92911e"
+    },
+    {
+      "path": "guides/model-routing.md",
+      "bytes": 2423,
+      "sha256": "dd139f385bb8fa8d9cf9d57b0a1abef9fe0f46a12988b926e7a3c4a247b92f34"
+    },
+    {
+      "path": "guides/opus-workflow-upgrade.md",
+      "bytes": 2292,
+      "sha256": "68777889a1294fbe4aea8f93b7c646e4a97e17036be898eb971d4685b49e0f78"
+    },
+    {
+      "path": "guides/skill-craftsman.md",
+      "bytes": 2292,
+      "sha256": "96d83602f7baabbf01ee7b61154ad9ee7c4f27d160e16034ebf2030c44f00980"
+    },
+    {
+      "path": "guides/task-brief.md",
+      "bytes": 2178,
+      "sha256": "5f89904afd10691cef62606342fc5ee02ec43b6b158c13625737e1ab41330298"
+    },
+    {
+      "path": "guides/token-efficiency-self-check.md",
+      "bytes": 3662,
+      "sha256": "719ccae666273b049fe04e76667229abd13a4d72d24bf648e2106769b50d9077"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10602,
+      "sha256": "1b976651ba4f26af938ac993f7303d505c11dfb22b110db40ebb28d573442640"
+    },
+    {
+      "path": "toolkits/agent-ready-product.md",
+      "bytes": 23380,
+      "sha256": "a15ea78c6bba157a37c6b2a1850257ab09a2b67385c8c4e8e2d720cb39190758"
+    },
+    {
+      "path": "toolkits/ai-builder.md",
+      "bytes": 29265,
+      "sha256": "98550e669ff61fdd967bbc62622f900302dc60603613dd1b9a2aa733d8c1e697"
+    },
+    {
+      "path": "toolkits/ai-instructions-rebuild-variant.md",
+      "bytes": 14351,
+      "sha256": "32d28eb44b6c1c28edc7646a93344e91510a68595527fed2a942e081f0ecea7f"
+    },
+    {
+      "path": "toolkits/ai-instructions-rebuild.md",
+      "bytes": 14344,
+      "sha256": "b0fc3c4cdc115305c88a7ac1db9180308356eb7b949de7656a83220970e754e1"
+    },
+    {
+      "path": "toolkits/ai-routing-system.md",
+      "bytes": 24735,
+      "sha256": "d335406580ba902121635261d4c436f0d32c83beb48c959ec3d95838a92737a0"
+    },
+    {
+      "path": "toolkits/api-key-blast-radius.md",
+      "bytes": 15970,
+      "sha256": "aa7643bac72117398b04614e9e8087b6c17349fc5551cfac33d392fcc88098f1"
+    },
+    {
+      "path": "toolkits/astra-experience.md",
+      "bytes": 11818,
+      "sha256": "a0c4ad95d0cac3bf19faf6bad2651f7709051887652dd46faed589e0c7351417"
+    },
+    {
+      "path": "toolkits/automation-choice.md",
+      "bytes": 36591,
+      "sha256": "93d2c949bb4352f4ac30388dc91de51fd65e5b130be9c0eebf9b0769eb9499a0"
+    },
+    {
+      "path": "toolkits/brownfield-safe-change.md",
+      "bytes": 28765,
+      "sha256": "ce5237a6b8d7c586ef52a641a2c0f05c88aa0e1729b12751d2c340c19acb43af"
+    },
+    {
+      "path": "toolkits/chatgpt-chrome.md",
+      "bytes": 18401,
+      "sha256": "1fb7423dd798550ed1fd10f21f8fbe8e649aee4fc023d8ee3323f6d57b777c1d"
+    },
+    {
+      "path": "toolkits/claude-hooks-15.md",
+      "bytes": 18399,
+      "sha256": "759cca6afd5ce4040ead93279c848e9cbf20f11c660e58d3f1e02529982eaff4"
+    },
+    {
+      "path": "toolkits/claude-hooks-recommender.md",
+      "bytes": 10993,
+      "sha256": "19f2b4c44aa204999caa03222b67a3874a10000a78aba92f8e51c15b93bfe1a7"
+    },
+    {
+      "path": "toolkits/claude-md-checkup.md",
+      "bytes": 12100,
+      "sha256": "05baef36e68fc713a8a08c3e71d45cb746d58333eec965c11b7428d5f02c3c60"
+    },
+    {
+      "path": "toolkits/claude-output-styles.md",
+      "bytes": 17046,
+      "sha256": "053f6dc1dd8b9991e193a553e8db26ae77021e4bb02200f54195c534e958d071"
+    },
+    {
+      "path": "toolkits/codex-security-bridge.md",
+      "bytes": 20205,
+      "sha256": "b1710bde92f55ece3fae7d6e71091ba2cf96bd0731aef2453152ed02508f02e8"
+    },
+    {
+      "path": "toolkits/codex-task-command.md",
+      "bytes": 18075,
+      "sha256": "4dae16b8d93290e283dc755cc506d15fcf98b035c970f82b44238721e9abb29c"
+    },
+    {
+      "path": "toolkits/codex-workflow-council.md",
+      "bytes": 16866,
+      "sha256": "25cc90eb492fe79c80611d75334e8facc0792720bdb3d659be573aadd44a5f6b"
+    },
+    {
+      "path": "toolkits/cross-model-review.md",
+      "bytes": 34038,
+      "sha256": "41220d3c34d7952b400346ec1e506ea8e4dc2da2f0e07591a482939ba543dea7"
+    },
+    {
+      "path": "toolkits/dynamic-workflows.md",
+      "bytes": 18286,
+      "sha256": "b8c54598e707c152d066a9b6bf2eb8768970cec9864780731e98811d8ef41e9d"
+    },
+    {
+      "path": "toolkits/enterprise-ai-implementation.md",
+      "bytes": 35826,
+      "sha256": "c315ada526b9651d40faa5b8f1d2dfbb2e7278a701afdbb66808ad7e200be700"
+    },
+    {
+      "path": "toolkits/goal-taste.md",
+      "bytes": 21426,
+      "sha256": "443d8690ca99f4d5b3babf3fa345d44e6a0286505859359387db807670a85267"
+    },
+    {
+      "path": "toolkits/graph-workflow.md",
+      "bytes": 20147,
+      "sha256": "7dc654205fcee9f59b598f10e1005575b27cb9577771162ece98ffc7316c65d6"
+    },
+    {
+      "path": "toolkits/html-workpage.md",
+      "bytes": 19296,
+      "sha256": "dccdc20cc120dc1fb696b02e6ae887f7d2bfe8faa18991025a844690d2c7f230"
+    },
+    {
+      "path": "toolkits/human-sop-agentic-workflow.md",
+      "bytes": 34741,
+      "sha256": "425260ea4da9000a0356f20bb80bfc5f43cbc674ac1c91876c29f502de481fe2"
+    },
+    {
+      "path": "toolkits/loop-engineering.md",
+      "bytes": 27206,
+      "sha256": "105992b1bb8cfac795731b37e2847507205d5956337e1821649e1417f2836471"
+    },
+    {
+      "path": "toolkits/matt-pocock-workflow.md",
+      "bytes": 8248,
+      "sha256": "e51fc26e39c88e374866018fc6dec6a0b5fde25df16d26d578bfc938b900744a"
+    },
+    {
+      "path": "toolkits/model-routing.md",
+      "bytes": 29372,
+      "sha256": "9d7a89064d09bf5c76ad9c5e71d9a042eecadec946f3d70f0c627ed2360b9c65"
+    },
+    {
+      "path": "toolkits/opus-workflow-upgrade.md",
+      "bytes": 22592,
+      "sha256": "ddf24ea1e60667bbb889332d51a4890c563bb697d16376be92404faf8eeed13b"
+    },
+    {
+      "path": "toolkits/skill-craftsman.md",
+      "bytes": 27648,
+      "sha256": "7f0e5270546d1cf6eefe8578032672f2fae31467aca18931e5a63d1d95a18aea"
+    },
+    {
+      "path": "toolkits/task-brief.md",
+      "bytes": 18304,
+      "sha256": "a64709c40a5cfd12715a4d4421c00bd7876dfec708f2c29059c978fc3e5c6700"
+    },
+    {
+      "path": "toolkits/token-efficiency-self-check.md",
+      "bytes": 19504,
+      "sha256": "b308f01e8ae18f92d4f09bc10330906ac41ebc6ebbe5d972a4eea3a0d35f22d7"
+    }
+  ]
+}

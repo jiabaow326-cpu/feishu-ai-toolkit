@@ -1,0 +1,2009 @@
+{
+  "updated_at": "2026-10-05",
+  "article_count": 29,
+  "toolkit_count": 29,
+  "tool_count": 116,
+  "categories": [
+    {
+      "id": "planning",
+      "title": "任務定義與品質評估"
+    },
+    {
+      "id": "automation",
+      "title": "工作流、企業 AI 與自動化"
+    },
+    {
+      "id": "coding",
+      "title": "程式開發、審查與 Hooks"
+    },
+    {
+      "id": "instructions",
+      "title": "AI 指令文件與 Skills"
+    },
+    {
+      "id": "routing",
+      "title": "工具選擇與模型分工"
+    },
+    {
+      "id": "security",
+      "title": "安全、權限與 API 金鑰"
+    },
+    {
+      "id": "communication",
+      "title": "輸出風格、HTML 與瀏覽器任務"
+    },
+    {
+      "id": "context",
+      "title": "Token 與 Context 效率"
+    }
+  ],
+  "toolkits": [
+    {
+      "id": "codex-task-command",
+      "title": "Codex 任務指揮工具包",
+      "category": "planning",
+      "description": "用四支 Prompt 完成交辦前判斷、整理工作資料夾、寫成可驗收任務與驗證成果。",
+      "when_to_use": "剛開始用 Codex，或交辦任務常跑偏、產出難以驗收時。",
+      "requirements": [
+        "Prompt 1、3、4 可用 Codex、Claude、ChatGPT 或 Gemini。",
+        "Prompt 2 需要 Codex 或 Claude Code 等能讀寫本機檔案的 Agent。"
+      ],
+      "usage_steps": [
+        "完整流程按 Prompt 1 → 2 → 3 → 4 執行；亦可只選當前痛點。",
+        "複製每一支完整程式碼區塊，貼給適用的 AI。",
+        "依它的提問提供任務、來源、範圍和驗收證據；Run Spec 可先單獨試用。"
+      ],
+      "original_path": "toolkits/codex-task-command.md",
+      "guide_path": "guides/codex-task-command.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/F4i3wBle1iVxTskDMMicOjbDnAg",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/KUBuw6tjnibv8CknYtIcEXJKn0g",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Steer or Dispatch",
+          "type": "Prompt",
+          "purpose": "判斷任務應貼身協作或放手交辦，交付建議、最大風險與下一步。",
+          "path": "toolkits/codex-task-command.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Project Room",
+          "type": "Prompt",
+          "purpose": "盤點資料夾、複製工作素材，產出重複版本、缺漏衝突清單與 working brief。",
+          "path": "toolkits/codex-task-command.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Run Spec",
+          "type": "Prompt",
+          "purpose": "將模糊任務變成有目標、來源、界限、完成條件、升級規則與證據的交辦規格。",
+          "path": "toolkits/codex-task-command.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Is It Real?",
+          "type": "Prompt",
+          "purpose": "根據實際成果和來源，提出抽查點與接受、退回補證據、進一步驗證的結論。",
+          "path": "toolkits/codex-task-command.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "4dae16b8d93290e283dc755cc506d15fcf98b035c970f82b44238721e9abb29c"
+    },
+    {
+      "id": "goal-taste",
+      "title": "Goal & Taste Toolkit",
+      "category": "planning",
+      "description": "將模糊任務寫成可驗證的長任務目標，並從對 AI 產出的修改歷史提煉品質標準。",
+      "when_to_use": "Agent 很快停下來、做完後不符合期待，或主觀品質只能說出『差一點』『太 AI 味』時。",
+      "requirements": [
+        "支援對話追問的 AI。目標定義需要預期結果、驗證、限制、權限邊界、迭代策略與卡住停止條件；品味提煉需提供三至五次拒絕或修改 AI 產出的具體例子。"
+      ],
+      "usage_steps": [
+        "客觀任務直接使用 Goal Definer。寫作、設計或行銷等主觀任務，先用 Taste Distiller 建立 Taste Profile，再放入 Goal Definer 的 Verification 欄位。將生成的 goal prompt 交給支援長任務的 agent。"
+      ],
+      "original_path": "toolkits/goal-taste.md",
+      "guide_path": "guides/goal-taste.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/MvcVwkcWwi2Ji6kBv12cKZbxnMc",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/FVdnwzevdiOPfskXsT8cD1Cenmc",
+      "article_title": "让 AI 不停下来的关键是 evaluation：4 个学派解析 + Goal & Taste Toolkit",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Goal Definer",
+          "type": "Prompt",
+          "purpose": "用對話追問 outcome、verification、constraints、boundaries、iteration policy、blocked stop condition 六要素，輸出任務診斷、完整 goal prompt 與使用提醒。",
+          "path": "toolkits/goal-taste.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Taste Distiller",
+          "type": "Prompt",
+          "purpose": "從拒絕與改寫案例找出三至六個偏好，建立每項一至五分 rubric，輸出 Markdown 與 JSON 的 Taste Profile 及可重用指令。",
+          "path": "toolkits/goal-taste.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "兩組 Prompt 本身用來定義目標與評估標準，不執行任務。/goal 與 evaluator hook 能否使用取決於接收端版本及環境。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "443d8690ca99f4d5b3babf3fa345d44e6a0286505859359387db807670a85267"
+    },
+    {
+      "id": "loop-engineering",
+      "title": "Loop 工程工具包",
+      "category": "planning",
+      "description": "先判斷任務適不適合做成 Loop，再建立可檢查的驗收標準與九欄位執行規格。",
+      "when_to_use": "有重複任務想自動化，但缺乏目標、邊界、驗收與停止條件，或完成標準十分主觀時。",
+      "requirements": [
+        "支援多輪追問的 Claude 或 ChatGPT 對話介面。生成的 Loop Spec 可交給 Claude Code、Codex、Cursor 等支援長任務的 agent 工具。"
+      ],
+      "usage_steps": [
+        "不確定是否適合時先使用 Loop Readiness Auditor。主觀品質任務再用 Verifier Rubric Builder 產出 rubric 或 checklist，最後交給 Loop Spec Writer 組成一頁規格。已有明確任務可直接寫 Loop Spec。"
+      ],
+      "original_path": "toolkits/loop-engineering.md",
+      "guide_path": "guides/loop-engineering.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GDfAwxCEqiMUBEkvR2dcp9sNnTc",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/ANPDwqy3AirP6HkwQICcr8pknSd",
+      "article_title": "Loop Engineering 的 9 个检查点：从目标定义到 Human Boundary 的实战框架",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Loop Readiness Auditor",
+          "type": "Prompt",
+          "purpose": "用十個問題檢查真實重複任務的定義缺口，判定適合或先別做，推薦 Solo Loop、Maker-Checker 或 Manager-Helper 規模。",
+          "path": "toolkits/loop-engineering.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Loop Spec Writer",
+          "type": "Prompt",
+          "purpose": "將任務整理成 Goal、Trigger、Sources、Actions、Verifier、Human Boundary、Memory、Hard Stop、Fallback 九欄位 Loop Spec。",
+          "path": "toolkits/loop-engineering.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Verifier Rubric Builder",
+          "type": "Prompt",
+          "purpose": "把『文章更順』『UX 更好』等抽象完成標準拆成一至五分 rubric 或 yes/no checklist，並定義收斂條件。",
+          "path": "toolkits/loop-engineering.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "這三組 Prompt 產出設計與驗收規格；實際 agent 執行仍須依工具權限、人工確認與 Hard Stop 驗證。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "105992b1bb8cfac795731b37e2847507205d5956337e1821649e1417f2836471"
+    },
+    {
+      "id": "task-brief",
+      "title": "任務交辦 Prompt Set：判斷階段、從零建立 Brief、送出前體檢",
+      "category": "planning",
+      "description": "先判斷任務階段，再建立目標、背景、素材、邊界與完成定義五欄位 Brief，或檢查已有交辦訊息。",
+      "when_to_use": "不知道該叫 AI 做什麼，想從模糊想法建立任務，或送出 Prompt 前檢查缺口。",
+      "requirements": [
+        "Claude、ChatGPT、Gemini 等對話介面；按照引導逐題回答，不必預先整理成完整 Prompt。"
+      ],
+      "usage_steps": [
+        "方向不確定時先使用 Stage Decider。進入執行階段後用 Brief Builder 問答建 Brief，將輸出貼到新對話。已經寫好交辦訊息則使用 Brief Auditor 體檢與改寫。"
+      ],
+      "original_path": "toolkits/task-brief.md",
+      "guide_path": "guides/task-brief.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/XXemwWxxoiA8YTkn0vwc8fctnkf",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/DpnJwF7cCiBHZYk0GRJc8m6VnWd",
+      "article_title": "你不是不会写 Prompt，是不会定义任务：五栏位 Brief 拆解 + 3 个任务交办 Prompts",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Stage Decider",
+          "type": "Prompt",
+          "purpose": "判定任務處在思考、探索、決定或執行階段，給出適合的指令模式、起手指令與升級到下一階段的條件。",
+          "path": "toolkits/task-brief.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Brief Builder",
+          "type": "Prompt",
+          "purpose": "以逐欄對話收集五欄位資訊，組裝成自然語言完整 Brief 與逐欄速查。",
+          "path": "toolkits/task-brief.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Brief Auditor",
+          "type": "Prompt",
+          "purpose": "逐欄檢查已寫好的 Prompt，指出模糊字眼與缺口，追問後保留原語氣改寫並展示 Before / After。",
+          "path": "toolkits/task-brief.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "Prompt 用於定義與審核任務，不等於已完成任務本身。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "a64709c40a5cfd12715a4d4421c00bd7876dfec708f2c29059c978fc3e5c6700"
+    },
+    {
+      "id": "agent-ready-product",
+      "title": "2C 產品代理入口診斷提示集",
+      "category": "automation",
+      "description": "把產品頁面流程拆成 agent 任務，找出值得 AI 化的情境，檢查服務資料與底層狀態、權限和責任。",
+      "when_to_use": "已有 App、小程式、網站、SaaS、電商或服務，準備增加 AI agent 入口，或正在接 API、MCP、Skill 前。",
+      "requirements": [
+        "Claude、ChatGPT、Gemini 或 Codex。提供產品文件、API 文件、客服 SOP、流程截圖、訂單狀態表或後台欄位可讓診斷更具體。"
+      ],
+      "usage_steps": [
+        "成熟產品依序用第 1 組拆任務流、第 2 組挑一至三個情境，再用第 3、4 組查資料與底層能力。早期 MVP 可先找摩擦再拆任務；已準備接工具時直接檢查資料與 readiness。"
+      ],
+      "original_path": "toolkits/agent-ready-product.md",
+      "guide_path": "guides/agent-ready-product.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/Dfstwfxmciq13ZkBEzecvggYnnd",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/USWew9vlGigJ6Zk0AFJcXWTbnfb",
+      "article_title": "想让你的服务支持AI？ 用户、入口点和体验都需要重构，帮助你确定下一步",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "任务流程与能力图",
+          "type": "Prompt",
+          "purpose": "將頁面流程拆成意圖、情境、資料對象、動作、狀態、例外、責任與完成證據，產出 Task Flow & Capability Map。",
+          "path": "toolkits/agent-ready-product.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "特工安置查找器",
+          "type": "Prompt",
+          "purpose": "依高頻、低風險、偏好穩定與錯誤可恢復四個準則，找出一至三個最值得先做的 AI agent 情境。",
+          "path": "toolkits/agent-ready-product.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "代理可读服务层",
+          "type": "Prompt",
+          "purpose": "審查 agent 能否讀懂能力、限制、價格、優惠、庫存、風險與信任證據，指出資料缺口及收據需求。",
+          "path": "toolkits/agent-ready-product.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "特工准备五部分评分卡",
+          "type": "Prompt",
+          "purpose": "檢查持久狀態、狀態機、所有權、明確動詞及審計歷史與權限，產出評分、交易責任檢查、上線前必修項及三十天改進順序。",
+          "path": "toolkits/agent-ready-product.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "Prompt 只提供診斷與改進順序，不能取代實作、權限設計或實際操作驗證。原文中文名稱存在翻譯不一致，工具原文完整保留。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "a15ea78c6bba157a37c6b2a1850257ab09a2b67385c8c4e8e2d720cb39190758"
+    },
+    {
+      "id": "ai-builder",
+      "title": "AI Builder 縱軸工具包",
+      "category": "automation",
+      "description": "從 workflow 拆解、五層 stack 審查、三維度評估，到是否採用 multi-agent 的四組診斷 Prompt。",
+      "when_to_use": "想設計 agent 工作流、審查現有 prototype 或 production 的架構，補上評估方法，或判斷 multi-agent 是否必要。",
+      "requirements": [
+        "具推理能力的模型。來源建議 Claude 擴展思維、ChatGPT 推理或 Gemini 深度思考；stack 與 multi-agent 架構判斷需提供現有系統、工具與限制。"
+      ],
+      "usage_steps": [
+        "未上線時先跑 workflow 拆解器再跑 Eval 設計器；已有系統時先做 Stack Audit 再補 Eval。懷疑 single agent 不足時，用 Multi-Agent 決策篩判斷。可以將前一組輸出接到下一組。"
+      ],
+      "original_path": "toolkits/ai-builder.md",
+      "guide_path": "guides/ai-builder.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/Pjw2wHYibi0YbfkfxbZczVrVn6e",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/BvzTw23S2igAaUkcytscO5Vbnhh",
+      "article_title": "Stanford 兩小時 AI 課精華版：Augmenting LLMs 的五種技巧 + AI Builder 工具包",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "纵轴 Workflow 拆解器",
+          "type": "Prompt",
+          "purpose": "把工作流拆成五至七步，標記 fuzzy 或 deterministic，推薦 LLM one-shot、RAG、Tool 或 Fine-tune，並說明工具選擇與下一步。",
+          "path": "toolkits/ai-builder.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "纵轴 Stack Audit",
+          "type": "Prompt",
+          "purpose": "依 Prompt Engineering、Fine-tune、RAG、Agentic Workflow、Multi-Agent 五層審查 stack，評估耐久性與過度設計風險，給出自建、直接使用或觀望建議。",
+          "path": "toolkits/ai-builder.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "三维度 Eval 设计器",
+          "type": "Prompt",
+          "purpose": "依 component/end-to-end、objective/subjective、quantitative/qualitative 三維度建立評估矩陣，產出 LLM-as-Judge 草稿及二十筆 trace 的人工錯誤分析 checklist。",
+          "path": "toolkits/ai-builder.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Multi-Agent 决策筛",
+          "type": "Prompt",
+          "purpose": "用五個問題評估 multi-agent 的必要性，在 single agent + chain、hierarchical multi-agent、flat multi-agent 中提出建議與三個下一步。",
+          "path": "toolkits/ai-builder.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "保留來源原文：最後一組標題附近原本誤標 Prompt 3，但其內容與清單對應第 4 組 Multi-Agent 決策篩。原始文件未改寫。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "98550e669ff61fdd967bbc62622f900302dc60603613dd1b9a2aa733d8c1e697"
+    },
+    {
+      "id": "automation-choice",
+      "title": "自動化交辦包",
+      "category": "automation",
+      "description": "兩個完整 Coding Agent Prompt：從 Make／n8n 匯出 JSON 判斷搬移或保留，或從新需求訪談開始，依六欄 SPEC 完成實作、測試、部署與交接。",
+      "when_to_use": "既有視覺化流程常出錯或預計改版、需要判斷是否改由程式維護，或準備建立一項全新重複工作自動化時。",
+      "requirements": [
+        "在本機可讀寫檔案與執行程式的 Claude Code 或 Codex；為單一自動化建立空資料夾。舊流程另需完整 Make blueprint 或 n8n workflow JSON，以及可登入的相關服務帳號。"
+      ],
+      "usage_steps": [
+        "新建空資料夾，一項自動化一個資料夾；在其中啟動 Claude Code 或 Codex。",
+        "既有 Make／n8n 流程選 Prompt 1，把完整匯出 JSON 放到本機資料夾；全新需求選 Prompt 2。",
+        "把完整 Prompt 當作第一則訊息，依各階段問題確認健康報告、搬移決策或需求訪談。",
+        "核對六欄 SPEC.md 後，讓 coding agent 在已授權範圍內實作並先做 dry-run 測試。",
+        "按原文步驟自行處理金鑰與平台登入，確認首次執行、通知及 README；搬移流程還需依計畫新舊並跑後再停舊流程。"
+      ],
+      "original_path": "toolkits/automation-choice.md",
+      "guide_path": "guides/automation-choice.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/UF1jwg2Mbi2CT7kTHTtcnIe8nMd",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/SwhwwgnJci69ANkfZV2cktD6nOf",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Blueprint 反推器",
+          "type": "Prompt",
+          "purpose": "分析 Make／n8n 匯出流程的健康狀況與搬留條件，反推六欄 SPEC；選擇搬移時，接續實作、測試、部署及一週新舊並跑。",
+          "path": "toolkits/automation-choice.md",
+          "when_to_use": "手上有已運作的 Make／n8n 流程，想評估維護成本與遷移是否值得時。",
+          "usage_steps": [
+            "在獨立資料夾的 Claude Code／Codex 貼上 Prompt 1。",
+            "提供完整匯出 JSON，回答過往故障及未來變更頻率。",
+            "確認搬或留及六欄 SPEC；留在原平台時以 SPEC 交接結束。",
+            "選擇搬移時完成 dry-run、已授權的首次真實執行、部署、新舊並跑與交接。"
+          ]
+        },
+        {
+          "name": "自動化上線嚮導",
+          "type": "Prompt",
+          "purpose": "逐題收集新需求，建立六欄 SPEC，再引導本機建置、真實資料 dry-run、部署、首次執行與白話 README。",
+          "path": "toolkits/automation-choice.md",
+          "when_to_use": "沒有現成流程但有重複任務想自動化，或已有 Prompt 1 產出的 SPEC，現在決定遷移時。",
+          "usage_steps": [
+            "在專用資料夾貼上 Prompt 2；已有 SPEC.md 時讓 agent 讀取並重新確認。",
+            "說明觸發、輸入、人工步驟、理想結果及驗收方式。",
+            "確認計畫與所需秘密名稱，再實作和執行 dry-run。",
+            "依引導自行登入與填入平台秘密設定，確認部署、第一次執行、失敗通知與 README。"
+          ]
+        }
+      ],
+      "notes": "完整 Prompt 是交給 coding agent 的工作規則，本次只保存原文，沒有執行其中的部署、寫檔或帳號操作。實際採用時，平台費用、介面及匯出內容仍需依當前情況核對。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "93d2c949bb4352f4ac30388dc91de51fd65e5b130be9c0eebf9b0769eb9499a0"
+    },
+    {
+      "id": "codex-workflow-council",
+      "title": "Workflow Asset Miner Prompt + AI Council Discussion Prompt",
+      "category": "automation",
+      "description": "從個人工作歷史挖掘可重用流程，並以五個角度審查重要決策的兩組 Prompt。",
+      "when_to_use": "重複工作累積到值得打包成資產，或在產品方向、內容角度、商業判斷與工作流改動前需要檢查假設。",
+      "requirements": [
+        "Workflow Asset Miner 最適合有權限讀取本機文件、工作記憶、專案資料及既有資產的 Codex；AI Council 可在 ChatGPT、Claude、Gemini 或 Codex 使用。獨立 subagent 審查需要環境支援並依原 Prompt 取得使用者同意。"
+      ],
+      "usage_steps": [
+        "複製需要的完整 Prompt 到 AI 對話中，依順序回答問題。挖掘流程時提供時間範圍、來源、敏感區域及既有資產；審查決策時提供決策問題、目前傾向、證據、限制與期望結果。"
+      ],
+      "original_path": "toolkits/codex-workflow-council.md",
+      "guide_path": "guides/codex-workflow-council.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/YIpgwyVr5iE7LCkXYKocuuG4nOL",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/RcALwDEXEi55H4kAOxlcWKndndg",
+      "article_title": "Codex 最新功能解析 + 两组实用提示词",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Workflow Asset Miner Prompt",
+          "type": "Prompt",
+          "purpose": "檢查近期對話、筆記、專案文件與工作記錄，找出重複、耗時、容易出錯且尚未被既有資產涵蓋的流程，產出候選清單及高信心的 Prompt、模板、Skill、agent、automation、rule、SOP 或 checklist。",
+          "path": "toolkits/codex-workflow-council.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "AI Council Discussion Prompt",
+          "type": "Prompt",
+          "purpose": "用反方風險、假設、機會、外部理解與執行五個角度挑戰決策，產出證據與假設區分、分歧、假設風險表、最終建議及 Output Result。",
+          "path": "toolkits/codex-workflow-council.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "證據不足時只產出候選清單，不應憑空建立資產；決策涉及市場、法律、價格或政策時，原 Prompt 要求驗證來源。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "25cc90eb492fe79c80611d75334e8facc0792720bdb3d659be573aadd44a5f6b"
+    },
+    {
+      "id": "enterprise-ai-implementation",
+      "title": "企業 AI 實施工具包",
+      "category": "automation",
+      "description": "五個 Prompt 從個人工作流到組織工具生態，協助盤點自動化介面、設計工具比較實驗、評估 Agent 基底、配置權限層級與計算依賴鏈可靠性。",
+      "when_to_use": "選擇個人 AI 工作流、評估組織 Agent 部署、設計操作權限，或想理解外部依賴造成的可靠性瓶頸時。",
+      "requirements": [
+        "可進行多輪訪談的 AI；需有實際工作與工具清單。組織路徑另需工具狀態、交接問題、Agent actions、現有核准規則與依賴服務資訊。"
+      ],
+      "usage_steps": [
+        "個人路徑：跑 Prompt 1，提供每週實際工具與任務；從結果挑一項工作交給 Prompt 2 設計一週比較實驗。",
+        "組織路徑：跑 Prompt 3，提供六大 domain 的工具與交接問題。",
+        "將 Agent Infrastructure 的 actions 交給 Prompt 4，確定 Tier 0–4、審核、升級與回復方案。",
+        "把 action 的依賴鏈交給 Prompt 5，確認 uptime 數據或假設後計算三種場景。",
+        "已有部分資料時，可直接選用對應的單一 Prompt。"
+      ],
+      "original_path": "toolkits/enterprise-ai-implementation.md",
+      "guide_path": "guides/enterprise-ai-implementation.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/YjojwxVJhiXafSkhFXycJkAGnnc",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/FjM6wvNVUi3TFXkIoF6cic1anIk",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Personal Workflow Auditor",
+          "type": "Prompt",
+          "purpose": "把每週工具分成 API-Connected、GUI-Only、File-Based、Unknown，產出自動化部署分流與前三項 quick wins。",
+          "path": "toolkits/enterprise-ai-implementation.md",
+          "when_to_use": "訂閱 Agent、規劃自動化 rollout 或找出重複工作中的自動化機會之前。",
+          "usage_steps": [
+            "貼上 Prompt 1。",
+            "提供角色、實際週工作、工具清單、每項任務、耗時與整合狀態。",
+            "確認盤點結果，再閱讀 readiness scorecard 與 deployment triage map。"
+          ]
+        },
+        {
+          "name": "Default vs Specialist Measurement Designer",
+          "type": "Prompt",
+          "purpose": "選出能公平比較的重複任務，建立成功標準、共同輸入、量測紀錄與一週執行計畫。",
+          "path": "toolkits/enterprise-ai-implementation.md",
+          "when_to_use": "想以資料比較公司預設 AI 與另一個工具，作為換工具的依據時。",
+          "usage_steps": [
+            "貼上 Prompt 2，提供預設工具、候選工具與週任務。",
+            "確認頻率、耗時、品質判斷、受眾與兩工具能否用相同輸入。",
+            "採用選出的任務、log template 與 run plan；每次完成後記錄時間、返工及品質。"
+          ]
+        },
+        {
+          "name": "Organizational Substrate Auditor",
+          "type": "Prompt",
+          "purpose": "依 persistent state、state machine、ownership、defined verbs、audit history 評估組織工具，找出工作狀態流失與系統交接斷點。",
+          "path": "toolkits/enterprise-ai-implementation.md",
+          "when_to_use": "組織評估 Agent readiness，或要決定哪些現有系統優先修整、暴露 API／MCP 時。",
+          "usage_steps": [
+            "貼上 Prompt 3。",
+            "提供 engineering、sales、support、HR、finance、ops 工具，以及組織規模、產業和具體交接問題。",
+            "確認盤點，保存三層工具地圖、gaps、fractures 與排序 action plan。"
+          ]
+        },
+        {
+          "name": "Permission Tier Architect",
+          "type": "Prompt",
+          "purpose": "依可逆性、影響範圍、頻率與可驗證性，把 Agent actions 分配到 Tier 0–4，設計審核、升級、回復與擴大自主權條件。",
+          "path": "toolkits/enterprise-ai-implementation.md",
+          "when_to_use": "Agent 即將操作實際流程，需要逐項定義授權與人工核准邊界時。",
+          "usage_steps": [
+            "貼上 Prompt 4，提供具體 action 清單。",
+            "補充 stakeholders、現有人工核准規則、風險偏好與過往事故。",
+            "確認背景後，檢查 tier assignments、escalation rules、review requirements 與 rollback plan。"
+          ]
+        },
+        {
+          "name": "Agent Reliability Stress Tester",
+          "type": "Prompt",
+          "purpose": "將依賴 uptime 相乘，換算停機時間，辨識最弱依賴，並比較目前、加入 fallback 與額外依賴下降三種場景。",
+          "path": "toolkits/enterprise-ai-implementation.md",
+          "when_to_use": "Agent 依賴多個外部服務，需要評估端到端可用性與改善瓶頸時。",
+          "usage_steps": [
+            "貼上 Prompt 5，列出全部外部依賴。",
+            "提供實際 uptime，或逐項確認 Prompt 提出的預設假設。",
+            "檢查乘法與停機換算，閱讀三場景比較後討論 fallback、SLA 或替代方案。"
+          ]
+        }
+      ],
+      "notes": "原文的平台分流與模型版本屬文章框架；可靠性計算的 uptime 預設值是假設，必須先確認，不能當成特定服務的已核實 SLA。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "c315ada526b9651d40faa5b8f1d2dfbb2e7278a701afdbb66808ad7e200be700"
+    },
+    {
+      "id": "graph-workflow",
+      "title": "Graph Workflow Builder Prompt Set",
+      "category": "automation",
+      "description": "先判斷工作是否需要 Graph，再建立 Node／Edge／State 藍圖，以及 Gate、Verifier、Retry、人工批准與 Work Memory 契約。",
+      "when_to_use": "準備設計多步驟 AI 工作流、檢查既有 Graph 是否過度設計，或替已確認藍圖補上控制層時。",
+      "requirements": [
+        "可建立 Markdown 檔案的 Codex、Claude Code、Cursor Agent 等 AI；每個工作流使用專屬資料夾。一般聊天工具可改為輸出完整 artifact 並自行按指定檔名保存。"
+      ],
+      "usage_steps": [
+        "先用 Prompt 1 提供交付物、執行頻率與失敗成本，確認是否值得建立 Graph。",
+        "確認需要 Graph 後，將完整 Audit 交給 Prompt 2，建立最小 Node、Edge 與 State 藍圖。",
+        "將已確認 Blueprint 交給 Prompt 3，補上驗證、重試、人工批准及可重用記憶。",
+        "三份 artifact 保存在同一工作流專屬資料夾，沿用固定檔名；Audit 不通過時採用較簡單替代方案。"
+      ],
+      "original_path": "toolkits/graph-workflow.md",
+      "guide_path": "guides/graph-workflow.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/L8WkwWDWVi2gqokkFtOc7NKQn9b",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/Dz1gw2vZHi0QAakC4KbcSVrjnQf",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Task-to-Graph Suitability Audit",
+          "type": "Prompt",
+          "purpose": "以真實依賴、控制需求、重用價值與複雜度判斷 Graph、單一 Loop、一般程式、checklist 或單一 Prompt 哪個最適合。",
+          "path": "toolkits/graph-workflow.md",
+          "when_to_use": "多步驟任務尚未決定如何編排時。",
+          "usage_steps": [
+            "貼上 Prompt 1，回答交付物、頻率、風險及缺少的流程事實。",
+            "確認理解摘要，取得 01-graph-suitability-audit.md。",
+            "人工確認最小 Graph 範圍後才進 Prompt 2；不需要 Graph 時停止串接。"
+          ]
+        },
+        {
+          "name": "Node / Edge / State Mapper",
+          "type": "Prompt",
+          "purpose": "把已批准的最小工作範圍轉成 Node Contract、真實 Edge、State schema 與 Mermaid 工作圖。",
+          "path": "toolkits/graph-workflow.md",
+          "when_to_use": "Audit 已確認需要 Graph，且最小範圍取得確認時。",
+          "usage_steps": [
+            "貼上 Prompt 2 並提供完整 01-graph-suitability-audit.md。",
+            "補充工具、資料、權限、輸出結構及儲存選項。",
+            "確認契約與一致性檢查，保存 02-graph-blueprint.md。"
+          ]
+        },
+        {
+          "name": "Gate / Verifier / Retry Designer",
+          "type": "Prompt",
+          "purpose": "為重要輸出建立驗收、證據、Gate、有限局部重試、Fallback、Rollback、批准與 Work Memory 規則。",
+          "path": "toolkits/graph-workflow.md",
+          "when_to_use": "Node、Edge、State 已確認，但缺乏完整控制與恢復設計時。",
+          "usage_steps": [
+            "貼上 Prompt 3 及完整 02-graph-blueprint.md。",
+            "提供失敗成本、可用證據、重試上限、停止條件與批准角色。",
+            "確認控制策略與 red-team cases，保存 03-graph-control-layer.md。"
+          ]
+        }
+      ],
+      "notes": "Prompt 1 可能建議不用 Graph；這是正常決策結果。每個工作流需獨立資料夾，避免固定檔名彼此覆蓋。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "7dc654205fcee9f59b598f10e1005575b27cb9577771162ece98ffc7316c65d6"
+    },
+    {
+      "id": "human-sop-agentic-workflow",
+      "title": "Human SOP → Agentic Workflow 拆解工具包",
+      "category": "automation",
+      "description": "用五組可串接的 Prompt，把人類 SOP 拆成標準化節點，補齊隱性判斷並規劃工具接點與人工確認。",
+      "when_to_use": "有大量重複流程，想交給 agent；既有 SOP 跑不穩，或流程能跑但品質總是差一點時。",
+      "requirements": [
+        "Claude、ChatGPT、Gemini 等對話介面；提供真實流程、SOP、判斷案例、工具環境及人工審查需求。"
+      ],
+      "usage_steps": [
+        "從零依序使用 SOP Triage → Format Standardizer → Pipeline Decomposer → Tacit Knowledge Extractor → Integration & Checkpoint Planner，將前一組輸出貼入下一組。已有 SOP 可從第二組開始；品質問題可直接使用第四組。"
+      ],
+      "original_path": "toolkits/human-sop-agentic-workflow.md",
+      "guide_path": "guides/human-sop-agentic-workflow.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/XsnFw6XYoizBrwkCqzQcMdbYnhn",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/RsdJwH0N5iDM6xkuUX4cGO7ZnVg",
+      "article_title": "把最无聊的重复流程交给 AI：从 Human SOP 变成 Agentic Workflow 的 Prompt 工具包",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "SOP Triage",
+          "type": "Prompt",
+          "purpose": "從重複流程候選中挑出最值得先拆的項目，評估是否足夠清楚並指出卡點與下一步。",
+          "path": "toolkits/human-sop-agentic-workflow.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Format Standardizer",
+          "type": "Prompt",
+          "purpose": "把白話流程寫成參數化 SOP，標示 MUST、SHOULD、MAY，整理步驟與錯誤處理。",
+          "path": "toolkits/human-sop-agentic-workflow.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Pipeline Decomposer",
+          "type": "Prompt",
+          "purpose": "將結構化 SOP 拆成獨立節點，定義節點規格與節點間 artifact schema，找出可單獨替換的部分。",
+          "path": "toolkits/human-sop-agentic-workflow.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Tacit Knowledge Extractor",
+          "type": "Prompt",
+          "purpose": "挖掘資深人員沒寫出的判斷規則，將隱性知識補進 SOP 或節點，產出補丁清單與雙向開發 checklist。",
+          "path": "toolkits/human-sop-agentic-workflow.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Integration & Checkpoint Planner",
+          "type": "Prompt",
+          "purpose": "把節點連到真實工具，規劃人工確認點、觸發與排程及一週評估 rubric。",
+          "path": "toolkits/human-sop-agentic-workflow.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "工具產出是流程設計與規格，接真實工具、排程與上線仍要依環境實作和驗證。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "425260ea4da9000a0356f20bb80bfc5f43cbc674ac1c91876c29f502de481fe2"
+    },
+    {
+      "id": "brownfield-safe-change",
+      "title": "Brownfield 安全改動 Prompt Set",
+      "category": "coding",
+      "description": "四個 Prompt 串起既有專案探勘、帶邊界的改動規格、Diff 初審與影響範圍回歸檢查，保留人工最後驗收。",
+      "when_to_use": "接手既有 codebase、Agent 每次重摸專案，或擔心一項改動破壞其他頁面與共用功能時。",
+      "requirements": [
+        "Prompt 1 和 4 最適合能讀取整個 codebase 的 Claude Code、Cursor、Codex；網頁 AI 可依引導手動提供程式與搜尋結果。Prompt 2 和 3 可在能多輪追問的對話介面使用。"
+      ],
+      "usage_steps": [
+        "用 Prompt 1 從目標畫面出發探勘 codebase，核對並保存 CONTEXT_MAP.md。",
+        "將 Context Map 和改動需求交給 Prompt 2，確認不可改動清單與驗收條件。",
+        "將 Guardrail Spec 交給 coding agent 分塊實作；每交一塊用 Prompt 3 初審 diff。",
+        "合併前用 Prompt 4 搜尋共用 symbol 的使用處，比對契約與測試，再完成按風險排序的人工檢查。"
+      ],
+      "original_path": "toolkits/brownfield-safe-change.md",
+      "guide_path": "guides/brownfield-safe-change.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/Crr9wOW1QiUTBvk1l8dckgn8noh",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/TpB7wlDD8iDSPqk79g6c7CcTnKe",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Codebase Recon & Context Map",
+          "type": "Prompt",
+          "purpose": "只讀探勘目標區域的元件結構、資料流、共用資產使用處與專案慣例，產出可重用 Context Map。",
+          "path": "toolkits/brownfield-safe-change.md",
+          "when_to_use": "既有專案動工前，或新 session 反覆重查同一架構時。",
+          "usage_steps": [
+            "貼上 Prompt 1，說明 agent／網頁模式、目標區域與技術棧。",
+            "提供或讓 agent 讀取渲染檔案、既有規則與全部相關 symbol 使用處。",
+            "核對地圖並保存 CONTEXT_MAP.md；相關架構變更後更新地圖。"
+          ]
+        },
+        {
+          "name": "Guardrail Spec Generator",
+          "type": "Prompt",
+          "purpose": "將 Context Map 與需求轉為可交辦規格，列出必讀檔案、沿用模式、重用元件、禁止區域、工作切片與驗收條件。",
+          "path": "toolkits/brownfield-safe-change.md",
+          "when_to_use": "準備把既有專案的改動交給 coding agent 之前。",
+          "usage_steps": [
+            "貼上 Prompt 2，提供 Context Map、需求、紅線與分塊偏好。",
+            "親自確認 Absolutely Do Not Touch 與 Acceptance Criteria。",
+            "把完整最終 Guardrail Spec 作為 coding agent 的開工指令。"
+          ]
+        },
+        {
+          "name": "Brownfield Diff Review",
+          "type": "Prompt",
+          "purpose": "以既有專案規則初審 diff，辨識 guardrail 違反、未宣告行為變動、模式偏離、重造元件與健壯性缺口。",
+          "path": "toolkits/brownfield-safe-change.md",
+          "when_to_use": "coding agent 每交出一小塊改動，使用者終審之前。",
+          "usage_steps": [
+            "貼上 Prompt 3，提供完整該塊 diff 及 Guardrail Spec 或 Context Map。",
+            "確認改動宣稱的範圍。",
+            "依 Blocker、Should-fix、Nit 閱讀證據與無法驗證部分，再進行人工終審。"
+          ]
+        },
+        {
+          "name": "Blast-Radius & Regression Check",
+          "type": "Prompt",
+          "purpose": "逐使用處比對變更前後契約，標記 UNCHANGED／AFFECTED／UNKNOWN，對應既有測試、logging 規則與人工驗證。",
+          "path": "toolkits/brownfield-safe-change.md",
+          "when_to_use": "改動初審後、合併前，尤其涉及共用 hook、store、元件或 utility 時。",
+          "usage_steps": [
+            "貼上 Prompt 4，列出全部改動共用 symbol 與既有測試／logger 資訊。",
+            "讓 agent 搜尋全部使用處，或手動執行指定搜尋並貼回結果。",
+            "核對逐站判定，按報告順序跑測試、驗證頁面並重查修復後的 AFFECTED 位置。"
+          ]
+        }
+      ],
+      "notes": "四個 Prompt 可以單獨使用。Context Map 只探勘不改 code；Diff Review 是初審，未核實使用處必須保留 UNKNOWN。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "ce5237a6b8d7c586ef52a641a2c0f05c88aa0e1729b12751d2c340c19acb43af"
+    },
+    {
+      "id": "claude-hooks",
+      "title": "Claude Code Hooks：15 個情境與專屬推薦 Prompt",
+      "category": "coding",
+      "description": "提供 15 支建立 Hook 的原始需求 Prompt，另用只讀 Prompt 從本機 session 找出重複提醒和固定流程，產出帶證據的 Hook 推薦清單。",
+      "when_to_use": "經常提醒 AI 同樣規則，想讓特定時機固定檢查，或不知道該先建立哪個 Hook 時。",
+      "requirements": [
+        "Hook 推薦需 Claude Code、Codex 或 Cursor Agent 能讀本機 session。",
+        "依推薦 Prompt 先確認專案與時間範圍；其本身不安裝任何 Hook。",
+        "15 個 Hook 情境需由所在 Agent 依實際支援的事件與設定建置、測試。"
+      ],
+      "usage_steps": [
+        "要直接建置，從 claude-hooks-15.md 選擇對應情境，把 Prompt 全文貼給 Agent。",
+        "不確定先裝哪個時，在日常專案貼入推薦 Prompt，確認產品、專案範圍與回溯天數。",
+        "依實際證據選擇推薦，另複製其建置需求來建立；要求說明安裝位置、觸發與不觸發案例及卸載方式。"
+      ],
+      "original_path": "toolkits/claude-hooks-recommender.md",
+      "guide_path": "guides/claude-hooks.md",
+      "related_paths": [
+        "toolkits/claude-hooks-15.md"
+      ],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/BnjOw2RteiyhBZkeP6NcDhCCnMf",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GWWvw1H54iELDQkzxJBcxksInBe",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Hook 推薦 Prompt",
+          "type": "Prompt",
+          "purpose": "從至少三個獨立 session 的重複行為，篩出可定位時機、縮小範圍、觀測結果與指定失敗處置的推薦。",
+          "path": "toolkits/claude-hooks-recommender.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "載入 STATUS.md",
+          "type": "Prompt",
+          "purpose": "新對話、恢復或 /clear 後補回目標與待辦。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "套件管理工具檢查",
+          "type": "Prompt",
+          "purpose": "執行套件操作前確認 npm、pnpm 或 yarn。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "寫入前程式風格",
+          "type": "Prompt",
+          "purpose": "套用已有格式規範，不改程式邏輯。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "提交前敏感資料檢查",
+          "type": "Prompt",
+          "purpose": "擋下 .env、私鑰、憑證與疑似金鑰。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "危險指令防呆",
+          "type": "Prompt",
+          "purpose": "對刪除、覆蓋或清掉未存修改等難以復原指令先確認。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "保護文件",
+          "type": "Prompt",
+          "purpose": "對指定文件或資料夾的修改逐次確認。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "新文件位置與命名",
+          "type": "Prompt",
+          "purpose": "檢查新檔名及位置並調整，不動既有文件。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Slack 事件通知",
+          "type": "Prompt",
+          "purpose": "指定重要事件才通知指定頻道，通知失敗不影響工作。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "子代理啟動背景",
+          "type": "Prompt",
+          "purpose": "依子代理種類補上必要目標、規則、決策與文件位置。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "子代理成果查驗",
+          "type": "Prompt",
+          "purpose": "依指定完成標準驗證交回結果，設定退回上限。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "收工格式與語法檢查",
+          "type": "Prompt",
+          "purpose": "一次檢查本輪修改過的程式碼。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "寫作 Skill 複查",
+          "type": "Prompt",
+          "purpose": "收工前用指定 Skill 檢查全文，設定重試上限。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Prompt-based 完成度檢查",
+          "type": "Prompt",
+          "purpose": "由另一 AI 逐項檢查明確需求及完成證據。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "需要回應／完成通知",
+          "type": "Prompt",
+          "purpose": "分別使用明顯和柔和桌面通知。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "壓縮前保存決策",
+          "type": "Prompt",
+          "purpose": "保存已確認目標、決策、進度與禁止事項，壓縮後補回。",
+          "path": "toolkits/claude-hooks-15.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "19f2b4c44aa204999caa03222b67a3874a10000a78aba92f8e51c15b93bfe1a7"
+    },
+    {
+      "id": "cross-model-review",
+      "title": "Cross-Model Review Kit",
+      "category": "coding",
+      "description": "提供 Claude Code 一鍵安裝與驗收 Prompt、Stop hook 和 codex-peer-review Skill，讓 plan／spec 在定稿前與 Codex 互審。",
+      "when_to_use": "已有 Claude Code 和 Codex CLI，希望計畫與規格經獨立模型檢查再交付時。",
+      "requirements": [
+        "Claude Code、已登入且支援 exec／--json／resume 的 Codex CLI、本機 Python 3。",
+        "需要確認全域或專案安裝範圍與監控 plan／spec 路徑。",
+        "原安裝 Prompt 會調整全域 ~/.codex/config.toml；依原文確認影響後再執行。"
+      ],
+      "usage_steps": [
+        "複製一鍵安裝 Prompt 給 Claude Code，先做 Codex CLI smoke test。",
+        "確認 superpowers 是否使用、全域或專案安裝及 plan／spec 路徑。",
+        "安裝後貼上驗收 Prompt，檢查註冊、語法、擋未審文件、放已審文件四項。",
+        "手動安裝可使用作者下載的 Python 與 ZIP；飛書內嵌版本另存 inline，兩來源均保留。"
+      ],
+      "original_path": "toolkits/cross-model-review.md",
+      "guide_path": "guides/cross-model-review.md",
+      "related_paths": [
+        "assets/cross-model-review/codex-review-gate.py",
+        "assets/cross-model-review/codex-peer-review.zip",
+        "assets/cross-model-review/downloaded/codex-peer-review/SKILL.md",
+        "assets/cross-model-review/inline/codex-review-gate.py",
+        "assets/cross-model-review/inline/codex-peer-review/SKILL.md",
+        "assets/cross-model-review/sources.json"
+      ],
+      "attachments": [
+        {
+          "path": "assets/cross-model-review/codex-review-gate.py",
+          "sha256": "c83dfdcf06f83e9d773b391d1cfdfd6d66fe7d2322517f3326a8be0e541023b4",
+          "bytes": 6246,
+          "kind": "原作者公開下載原始檔",
+          "source_url": "https://garytalksstuff.com/kits/codex-review-gate.py"
+        },
+        {
+          "path": "assets/cross-model-review/codex-peer-review.zip",
+          "sha256": "3228b196f074bac39a1a19365ed184ebd3e91c0eb4d1de28f4779f3630d37f13",
+          "bytes": 6679,
+          "kind": "原作者公開下載壓縮檔",
+          "source_url": "https://garytalksstuff.com/kits/codex-peer-review.zip"
+        },
+        {
+          "path": "assets/cross-model-review/downloaded/codex-peer-review/SKILL.md",
+          "sha256": "0912a03fbef1ef64e9d33b03e28839cb6aedeec2800b49c6a1e9ec7f6856c775",
+          "bytes": 15536,
+          "kind": "從下載 ZIP 精確擷取的唯一文件",
+          "source_url": "https://garytalksstuff.com/kits/codex-peer-review.zip"
+        },
+        {
+          "path": "assets/cross-model-review/inline/codex-review-gate.py",
+          "sha256": "4030287cc4aae9f8b7718e00aaaab92d6bfbc930c34e02b43b5db2ed065c496c",
+          "bytes": 6029,
+          "kind": "飛書內嵌原始碼，僅抽出程式碼不執行",
+          "source_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AvlYwcbAHi0rAHkEKivc2kcOnQy"
+        },
+        {
+          "path": "assets/cross-model-review/inline/codex-peer-review/SKILL.md",
+          "sha256": "79f0e6017418d57b48e3dce686e5971c64bacf43be4396517fc2ca27b2ef150a",
+          "bytes": 15513,
+          "kind": "飛書內嵌 Skill 原文，僅抽出不執行",
+          "source_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AvlYwcbAHi0rAHkEKivc2kcOnQy"
+        }
+      ],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/MEQLwF6Nqi97OWkFD3CcrTOQnZe",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AvlYwcbAHi0rAHkEKivc2kcOnQy",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "一鍵安裝 Prompt",
+          "type": "Prompt",
+          "purpose": "建置 Stop hook、合併 settings.json 並放置／對齊 review Skill。",
+          "path": "toolkits/cross-model-review.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Stop hook: codex-review-gate.py",
+          "type": "Python Hook",
+          "purpose": "檢查近期 Write／Edit 的監控路徑，沒有 review marker 時要求互審。",
+          "path": "assets/cross-model-review/codex-review-gate.py",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "codex-peer-review Skill",
+          "type": "Skill",
+          "purpose": "與同一個 Codex session 逐輪修正或反駁，直到取得共識。",
+          "path": "assets/cross-model-review/downloaded/codex-peer-review/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "驗收 Prompt",
+          "type": "Prompt",
+          "purpose": "用合成 Stop 事件驗證四項行為，無須呼叫 Codex。",
+          "path": "toolkits/cross-model-review.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "ZIP 僅含 codex-peer-review/SKILL.md，未附 LICENSE 檔案。\n\n下載檔與飛書內嵌來源均獨立保留；SHA256 差異代表來源版本或格式不同，沒有以其中一版覆蓋另一版。\n\n所有檔案只下載、讀取及複製，未執行或安裝。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "41220d3c34d7952b400346ec1e506ea8e4dc2da2f0e07591a482939ba543dea7"
+    },
+    {
+      "id": "dynamic-workflows",
+      "title": "Workflow 啟動指令包：Bug 掃描、Code Review、計畫壓測",
+      "category": "coding",
+      "description": "三條 dynamic workflow 觸發 Prompt，以並行廣度、獨立驗證及單一收斂三層，執行 codebase Bug 掃描、多維審查或動工前方案壓力測試。",
+      "when_to_use": "需要廣泛掃描並控制假陽性、從多角度審查明確變更，或在重大決策實作前比較競爭方案時。",
+      "requirements": [
+        "原文指定使用支援 dynamic workflows 的 Claude Code（標示 research preview、v2.1.154 以上與付費方案）；使用前需核對目前功能可用性。另需明確範圍、評估重點與 Token 預算。"
+      ],
+      "usage_steps": [
+        "在可使用 dynamic workflows 的 Claude Code 選擇對應 Prompt，完整貼上。",
+        "依序回答範圍、問題／評分維度、模型路由與 Token 預算；第一次掃描先用單一子資料夾。",
+        "核對理解摘要，查看 workflow 計畫並確認執行。",
+        "用 /workflows 查看進度，檢查最終報告；依原文可在成功跑過後存為可重用指令。"
+      ],
+      "original_path": "toolkits/dynamic-workflows.md",
+      "guide_path": "guides/dynamic-workflows.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GoPhw9WrsiYo3YkkQfqc2437nah",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/LpgwwpRaSiRzy5kEiAgcnG1ynEg",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Codebase Bug Sweep",
+          "type": "Prompt",
+          "purpose": "便宜模型按檔案並行找候選問題，每項派三個獨立 skeptic 對抗驗證，再由強模型去重並整理 audit。",
+          "path": "toolkits/dynamic-workflows.md",
+          "when_to_use": "接手陌生 codebase，或大改前需找出潛在 Bug、安全問題與 unsafe patterns 時。",
+          "usage_steps": [
+            "貼上 Prompt 1，提供 repo／資料夾、問題類型、預算與模型路由。",
+            "先以小範圍查看計畫並確認執行。",
+            "檢查 audit 的掃描範圍、Token 消耗、通過驗證問題與檔案行號。"
+          ]
+        },
+        {
+          "name": "Multi-Dimensional Code Review",
+          "type": "Prompt",
+          "purpose": "按 correctness、security、performance、可維護性與簡化等不同維度並行審查單一變更，獨立驗證後產出合併建議。",
+          "path": "toolkits/dynamic-workflows.md",
+          "when_to_use": "PR 或分支合併前，或想建立可重用的多角度 review 流程時。",
+          "usage_steps": [
+            "貼上 Prompt 2，指定 PR、分支或完整 diff。",
+            "選擇審查維度、預算及是否要保存指令，確認計畫再執行。",
+            "閱讀逐維度發現、跨維度重點與 merge 建議。"
+          ]
+        },
+        {
+          "name": "Plan Stress-Test Panel",
+          "type": "Prompt",
+          "purpose": "由不同最佳化角度獨立提案，以 judge panel 按使用者標準評分，再綜合最佳方案與落選方案的具體優點。",
+          "path": "toolkits/dynamic-workflows.md",
+          "when_to_use": "架構選型、遷移或產品方向等重大決策投入實作之前。",
+          "usage_steps": [
+            "貼上 Prompt 3，提供決策、硬限制、評分標準、對立切角與預算。",
+            "確認計畫再執行獨立提案與 panel 評審。",
+            "檢查候選評分、真實分歧、嫁接改良及推薦仍依賴的風險前提。"
+          ]
+        }
+      ],
+      "notes": "本次僅完整保存原文，沒有執行任何 workflow。版本、模型、research preview 可用性與 Token 硬上限能力未在本次重新查證，採用前需依目前工具與官方文件核對。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "b8c54598e707c152d066a9b6bf2eb8768970cec9864780731e98811d8ef41e9d"
+    },
+    {
+      "id": "matt-pocock-workflow",
+      "title": "Matt Pocock 工作流與寫作技能",
+      "category": "coding",
+      "description": "複製文章介紹的官方開源技能，覆蓋需求釐清、原型、交接、大型決策地圖、需求分診、除錯、測試、審查與寫作；附官方安裝指令、現行更名版、setup 及直接依賴。",
+      "when_to_use": "希望用可重複的技能改善 Agent 工程流程，或透過反向提問整理靈感並逐段寫作時。",
+      "requirements": [
+        "支援 Agent Skills 與讀寫檔案的 coding agent；本快照未執行或安裝。",
+        "入口技能需保留同目錄參考文件與被呼叫的依賴；工程工作先執行 setup 選 tracker 與文件配置。",
+        "三個寫作技能目前是 in-progress，disable-model-invocation: true，需使用者明確呼叫及持續參與選擇。",
+        "選 GitHub／GitLab tracker 時需對應 CLI 與使用者帳號；也可選本機 Markdown。除錯與驗證需可實際重現的環境。"
+      ],
+      "usage_steps": [
+        "按需求表選技能；要使用官方現行版，可選 Claude Code 插件，或 npx skills@latest add mattpocock/skills。",
+        "需要這份固定快照時，複製完整技能目錄與直接依賴到該 Agent 支援的 skill 目錄，保留參考／設定／腳本／LICENSE。",
+        "工程工作在每個 repo 初次使用時明確呼叫 /setup-matt-pocock-skills，依提問選 tracker、標籤與文件位置。",
+        "提供真實目標、資料與可驗證環境，再明確呼叫對應入口；writing-great-skills 歷史版與 writing-for-agents 現版依需求擇一。",
+        "寫作先用 writing-fragments 收集素材，再選 writing-beats 逐拍組裝或 writing-shape 逐段成文；親自參與選開頭及接續方向。"
+      ],
+      "original_path": "toolkits/matt-pocock-workflow.md",
+      "guide_path": "guides/matt-pocock-workflow.md",
+      "related_paths": [
+        "assets/matt-pocock/README.md",
+        "assets/matt-pocock/LICENSE",
+        "assets/matt-pocock/sources.json",
+        "assets/matt-pocock/grill-me/SKILL.md",
+        "assets/matt-pocock/prototype/SKILL.md",
+        "assets/matt-pocock/handoff/SKILL.md",
+        "assets/matt-pocock/grill-with-docs/SKILL.md",
+        "assets/matt-pocock/wayfinder/SKILL.md",
+        "assets/matt-pocock/triage/SKILL.md",
+        "assets/matt-pocock/diagnosing-bugs/SKILL.md",
+        "assets/matt-pocock/tdd/SKILL.md",
+        "assets/matt-pocock/code-review/SKILL.md",
+        "assets/matt-pocock/writing-fragments/SKILL.md",
+        "assets/matt-pocock/writing-beats/SKILL.md",
+        "assets/matt-pocock/writing-shape/SKILL.md",
+        "assets/matt-pocock/writing-for-agents/SKILL.md",
+        "assets/matt-pocock/setup-matt-pocock-skills/SKILL.md",
+        "assets/matt-pocock/writing-great-skills/SKILL.md",
+        "assets/matt-pocock/grilling/SKILL.md",
+        "assets/matt-pocock/domain-modeling/SKILL.md",
+        "assets/matt-pocock/research/SKILL.md",
+        "assets/matt-pocock/codebase-design/SKILL.md"
+      ],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/ZWIgwxFMMi7tQokVmKoc2KrfnAh",
+      "tool_url": "https://github.com/mattpocock/skills",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "grill-me",
+          "type": "Skill",
+          "purpose": "連續追問想法、計畫或設計，釐清每個分支與未定決策。",
+          "path": "assets/matt-pocock/grill-me/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "prototype",
+          "type": "Skill",
+          "purpose": "以拋棄式 UI 或狀態／邏輯原型回答設計問題，附兩類原型指引。",
+          "path": "assets/matt-pocock/prototype/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "handoff",
+          "type": "Skill",
+          "purpose": "將對話濃縮成存於作業系統暫存區的交接文件，引用已有文件並移除敏感資訊。",
+          "path": "assets/matt-pocock/handoff/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "grill-with-docs",
+          "type": "Skill",
+          "purpose": "透過追問同步建立共用術語，更新 GLOSSARY.md 與 ADR。",
+          "path": "assets/matt-pocock/grill-with-docs/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "wayfinder",
+          "type": "Skill",
+          "purpose": "將大型工作建立成 issue tracker 決策地圖，逐票解決問題並整理新發現的路徑。",
+          "path": "assets/matt-pocock/wayfinder/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "triage",
+          "type": "Skill",
+          "purpose": "分類、查驗與追問 issue 或外部 PR，維持類別／狀態角色並產出 Agent brief。",
+          "path": "assets/matt-pocock/triage/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "diagnosing-bugs",
+          "type": "Skill",
+          "purpose": "先建立能抓到真實症狀的重現迴圈，再縮小案例、驗證假設、修正與回歸驗證。",
+          "path": "assets/matt-pocock/diagnosing-bugs/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "tdd",
+          "type": "Skill",
+          "purpose": "以 red-green-refactor 驅動逐個垂直切片，附測試與 mocking 參考。",
+          "path": "assets/matt-pocock/tdd/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "code-review",
+          "type": "Skill",
+          "purpose": "平行審查固定範圍的修改，分別檢查 coding standards 與原需求忠實度。",
+          "path": "assets/matt-pocock/code-review/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "writing-great-skills",
+          "type": "Skill",
+          "purpose": "保存文章所提歷史技能；說明觸發、context load、cognitive load 與漸進式揭露。",
+          "path": "assets/matt-pocock/writing-great-skills/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "writing-for-agents",
+          "type": "Skill",
+          "purpose": "writing-great-skills 的現行替代，指導 skills、AGENTS.md／CLAUDE.md 等 Agent 文件寫法。",
+          "path": "assets/matt-pocock/writing-for-agents/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "writing-fragments",
+          "type": "Skill",
+          "purpose": "反向提問挖出寫作素材，逐次附加片段到 Markdown，尚不訂文章結構。",
+          "path": "assets/matt-pocock/writing-fragments/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "writing-beats",
+          "type": "Skill",
+          "purpose": "以讀者已知概念為起點，每次提出候選 beat，使用者選擇後逐拍組成文章。",
+          "path": "assets/matt-pocock/writing-beats/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "writing-shape",
+          "type": "Skill",
+          "purpose": "素材檔唯讀，選開頭、論點與形式，逐段討論並另存成文。",
+          "path": "assets/matt-pocock/writing-shape/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "setup-matt-pocock-skills",
+          "type": "Skill",
+          "purpose": "每個 repo 初次使用工程技能時，設定 issue tracker、triage 標籤及文件位置。",
+          "path": "assets/matt-pocock/setup-matt-pocock-skills/SKILL.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "官方原始 SKILL.md、code／settings／同目錄參考文件均保留 bytes；原 MIT LICENSE 在每個技能目錄與包根目錄保存。\n\nwriting-great-skills 在官方已更名；保存更名前 commit 的原檔，另存現行 writing-for-agents。\n\n文章舊版與現行工具存在差異：CONTEXT.md 慣例已改為 GLOSSARY.md，wayfinder 以 tracker 決策票為主，writing-fragments 首次寫入帶 H1 工作標題。\n\n三個寫作技能在 upstream in-progress；這份快照保留原文，不將工具內容改成符合文章的敘述。\n\n僅複製文章涉及技能、現行替代、官方 setup 與四個直接依賴，未複製整個官方 repository。\n\n飛書匯出中的私密圖片未收入公開包。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "e51fc26e39c88e374866018fc6dec6a0b5fde25df16d26d578bfc938b900744a"
+    },
+    {
+      "id": "ai-instructions-rebuild",
+      "title": "AI Instructions Rebuild Set",
+      "category": "instructions",
+      "description": "逐條審查一份 CLAUDE.md、AGENTS.md、Custom Instructions 或 Skill，整理 KEEP、REWRITE、MOVE_TO_REFERENCE 與 DELETE_CANDIDATE，產出完整精簡候選版與待測清單。",
+      "when_to_use": "設定文件持續膨脹、更換模型後要重檢舊規則，或重複規定造成 source of truth 不清楚時。",
+      "requirements": [
+        "可閱讀長文字並多輪問答的 AI；一次提供一份完整設定文件。具檔案權限時可提供路徑，否則貼上內容；最好另有用途、載入時機與好壞結果範例。"
+      ],
+      "usage_steps": [
+        "先保存原始文件，選擇一份設定文件並移除敏感資訊。",
+        "複製完整 Prompt，選擇回覆語言，提供可讀路徑或完整文字。",
+        "補充用途、載入時機、實際任務、不能違反的邊界與既有證據；確認 scope summary。",
+        "保存逐條決定表、資訊架構、完整候選版、reference 草稿與待測清單。",
+        "用相同模型、真實任務及驗收標準比較目前版與候選版，再決定採用哪些改動。"
+      ],
+      "original_path": "toolkits/ai-instructions-rebuild.md",
+      "guide_path": "guides/ai-instructions-rebuild.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/YmOawX3evi0cBYkHj6EcGvA3ngf",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/NqfJwhiqTiAGM4kpP60cvMQMnBf",
+      "article_title": null,
+      "source_variants": [
+        {
+          "url": "https://kcn4ucks9zgj.feishu.cn/wiki/XGObweZnli4h86k1szgc5f81noh",
+          "path": "toolkits/ai-instructions-rebuild-variant.md",
+          "title": "AI Instructions Rebuild Set（繁體說明原文版本）",
+          "note": "頁面標題、中文說明語言、排版與空白不同；完整英文 Prompt 相同。"
+        }
+      ],
+      "tools": [
+        {
+          "name": "精簡 AI 設定文件",
+          "type": "Prompt",
+          "purpose": "檢查行為效果、資訊來源、載入範圍、重複內容、完成條件及風險，提出可追溯的重寫候選與驗證方法。",
+          "path": "toolkits/ai-instructions-rebuild.md",
+          "when_to_use": "整理一份給 AI 消費的設定文件，保留必要邊界並將情境專屬資訊移到適當位置時。",
+          "usage_steps": [
+            "貼上完整 Prompt，一次提供一份文件。",
+            "回答缺少的背景問題並核對範圍摘要。",
+            "檢查所有來源單元的決定表、主文件與 reference 草稿。",
+            "保存候選與測試清單；完成比較後由使用者決定是否採用。"
+          ]
+        }
+      ],
+      "notes": "這個 Prompt 只產出文字，不直接修改或覆寫檔案。DELETE_CANDIDATE 是待測候選，不代表可以安全刪除。另有繁體說明版本，兩份完整原文皆保留。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "b0fc3c4cdc115305c88a7ac1db9180308356eb7b949de7656a83220970e754e1"
+    },
+    {
+      "id": "claude-md-checkup",
+      "title": "CLAUDE.md／AGENTS.md 健檢 Prompt",
+      "category": "instructions",
+      "description": "逐條核對有效指令載入來源、專案現況與可查證事實，按選擇對照目前模型官方提示指南，建議留、改、搬、刪或待驗。",
+      "when_to_use": "升級模型、指令檔越寫越大、AI 不聽規則，或接手他人專案時。",
+      "requirements": [
+        "Claude Code 或 Codex，需要讀取真實專案檔案。",
+        "純網頁聊天工具無法直接檢查本機專案。"
+      ],
+      "usage_steps": [
+        "在要檢查的專案資料夾開啟 Claude Code 或 Codex。",
+        "將完整 Prompt 貼入；選擇是否依目前模型的官方 prompting guide 檢查。",
+        "檢視逐條建議與證據；此 Prompt 只讀，不會直接改檔。"
+      ],
+      "original_path": "toolkits/claude-md-checkup.md",
+      "guide_path": "guides/claude-md-checkup.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/FAo7w8iUai3TaPkgmZgccpkCnid",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/H9NEw9Ph9ihBshk2D9BcPJHSnEe",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "The CLAUDE.md Checkup",
+          "type": "Prompt",
+          "purpose": "建立有效指令鏈，逐條給原文、建議、證據與搬移目的地，先驗證後修剪。",
+          "path": "toolkits/claude-md-checkup.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "05baef36e68fc713a8a08c3e71d45cb746d58333eec965c11b7428d5f02c3c60"
+    },
+    {
+      "id": "skill-craftsman",
+      "title": "Skill Craftsman Toolkit",
+      "category": "instructions",
+      "description": "四支 Prompt 覆蓋 Skill 盤點、反推第一版 SKILL.md、觸發診斷及執行後迭代。",
+      "when_to_use": "想把重複工作做成 Skill，或現有 Skill 不觸發、過度觸發、輸出不穩定時。",
+      "requirements": [
+        "原文建議 Claude；ChatGPT 或 Gemini 可產出 SKILL.md 後另部署。",
+        "準備流程描述、既有 session／產出，以及要診斷的 SKILL.md。"
+      ],
+      "usage_steps": [
+        "從零建立：Prompt 1 → 2 → 3，實跑任務後再用 Prompt 4 複盤。",
+        "已有 Skill 出錯：先用 Prompt 3 判斷是否觸發問題，再用 Prompt 4 找具體 patch。",
+        "將完整 Prompt 貼給 AI，依階段提供工作流、範例、SKILL.md 或失敗對話。"
+      ],
+      "original_path": "toolkits/skill-craftsman.md",
+      "guide_path": "guides/skill-craftsman.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/F1dowsAFBiBlmukE9Decn2MhnRg",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/Pd3mwf9oliTQDFkQ6tpcAtlfnbd",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Skill Backlog Auditor",
+          "type": "Prompt",
+          "purpose": "用重複性、專業知識及高出錯成本三種信號，產出按 ROI 排序的候選清單。",
+          "path": "toolkits/skill-craftsman.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Skill Reverse-Engineer",
+          "type": "Prompt",
+          "purpose": "從 session、brain dump 或多份產出反推方法，產出完整 SKILL.md 和驗證提示。",
+          "path": "toolkits/skill-craftsman.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Skill Trigger Diagnostician",
+          "type": "Prompt",
+          "purpose": "檢查 description 與觸發失敗例，產出可路由的修正版與驗證案例。",
+          "path": "toolkits/skill-craftsman.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Skill Retro Facilitator",
+          "type": "Prompt",
+          "purpose": "將失敗按 body、references、scripts、subagent QA 分層，產出優先修正清單。",
+          "path": "toolkits/skill-craftsman.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "7f0e5270546d1cf6eefe8578032672f2fae31467aca18931e5a63d1d95a18aea"
+    },
+    {
+      "id": "ai-routing-system",
+      "title": "AI 分工系統建立 Prompt Kit",
+      "category": "routing",
+      "description": "評估新 AI 工具、審查目前工具組合，並把真實任務分配到合適工具的三組 Prompt。",
+      "when_to_use": "新工具推出時猶豫是否投入時間，付費工具花費與實際工作不匹配，或想建立個人與團隊 AI 分工地圖。",
+      "requirements": [
+        "可進行來回對話的 AI；工具評估需提供發布內容、目前工具清單、工作角色與資料位置。原文對新工具評估建議使用推理能力較強的模型。"
+      ],
+      "usage_steps": [
+        "可以各自使用。重整工具組合時先跑 AI Stack Audit，將浪費與缺口輸出交給 Personal Routing Map Builder。日後遇到新工具，再用 Tool Launch Filter 判斷是否加入。"
+      ],
+      "original_path": "toolkits/ai-routing-system.md",
+      "guide_path": "guides/ai-routing-system.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/H0dRwqhtligC1OkyBkdcBaGDnlf",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/PTWUw3fPGiiMpckC1aLc8gaWnWg",
+      "article_title": "AI 时代的真正差距：不是谁用更多工具，是谁有自己的一套结构 + AI 分工系统 Prompt 工具包",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Tool Launch Filter",
+          "type": "Prompt",
+          "purpose": "用連接能力、開放性、資料存取、生態系與疊加性五個維度評估新工具，產出評分表、go/no-go 判斷、三個行動與五行分享卡。",
+          "path": "toolkits/ai-routing-system.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "AI Stack Audit",
+          "type": "Prompt",
+          "purpose": "將付費 AI 工具對應到實際工作，找出不匹配、浪費與缺口，產出適配矩陣、一頁管理備忘錄及三項優先行動。",
+          "path": "toolkits/ai-routing-system.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Personal Routing Map Builder",
+          "type": "Prompt",
+          "purpose": "依需要什麼資料、資料在哪裡、哪個 AI 能讀寫三問，將常見工作分到預設工具、專門 wrapper 或其他產品，產出分工地圖與切換成本提醒。",
+          "path": "toolkits/ai-routing-system.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "工具推薦必須連到使用者的實際任務與資料；原文模型版本為來源建議，尚未另行驗證目前服務可用性。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "d335406580ba902121635261d4c436f0d32c83beb48c959ec3d95838a92737a0"
+    },
+    {
+      "id": "astra-experience",
+      "title": "Astra 實作體驗包",
+      "category": "routing",
+      "description": "兩份原始繁體中文 Prompt，建立產品 Landing Page 或互動 3D 扭蛋機，附正式 Goal token 預算與操作驗收。",
+      "when_to_use": "想用小作品體驗 GPT-6 Astra 的設計、空間、動畫與互動能力時。",
+      "requirements": [
+        "支援 GPT-6 Astra 與正式 Goal 的 Codex 桌面 app 一般持續任務。",
+        "使用空白專案，環境需能寫檔、執行程式；一般 codex exec 與 ephemeral 對話不適用 Goal 前置條件。",
+        "Goal token 預算是達限收尾控制，實際可超過，不是精準美元費用上限。"
+      ],
+      "usage_steps": [
+        "建立空白專案並選擇 GPT-6 Astra。",
+        "複製完整題目，填入【】資料；選填欄位可填「由你設計」。",
+        "確認 Goal token 預算；先驗證系統已建立 Goal，再開始製作。",
+        "依完成後開啟方式實測導覽、表單或抽取／揭曉／再玩以及手機版。"
+      ],
+      "original_path": "toolkits/astra-experience.md",
+      "guide_path": "guides/astra-experience.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/QGGFwAmLdiBTWCkSGz6cLThcnEh",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GoXZwhzSOirScvkJUqocckU0n0S",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "產品或生意 Landing Page",
+          "type": "Prompt",
+          "purpose": "依產品、客群和預期行動製作風格一致、有動態與手機版的單頁網站。",
+          "path": "toolkits/astra-experience.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "互動 3D 扭蛋機",
+          "type": "Prompt",
+          "purpose": "依主題及虛擬獎品製作轉把手、掉扭蛋、揭曉與再玩一次的完整流程。",
+          "path": "toolkits/astra-experience.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "a0c4ad95d0cac3bf19faf6bad2651f7709051887652dd46faed589e0c7351417"
+    },
+    {
+      "id": "model-routing",
+      "title": "個人 Model Routing 工作流拆解 Prompt Set",
+      "category": "routing",
+      "description": "四支 Prompt 將重複工作拆成交付鏈，分配角色、模型強度與推理強度，查開放權重候選，設計審查與停損儀表板。",
+      "when_to_use": "想建立自己的模型分工表，或讓較便宜模型接手可驗收步驟時。",
+      "requirements": [
+        "Codex、Claude Code、Cursor Agent 或能建立 Markdown／HTML 的工具。",
+        "Prompt 3 必須能查官方 model card、license、Provider／Gateway 與當前可用性。",
+        "無法建立檔案的聊天工具會改以標示檔名的單一 code block 輸出。"
+      ],
+      "usage_steps": [
+        "第一次建立流程依序跑 Prompt 1 → 2 → 3 → 4。",
+        "每次將上一步產生的 Markdown 交給下一步，勿重新猜測需求。",
+        "最後在瀏覽器開啟 04-routing-action-dashboard.html 檢查每步驗收、停損、回退與升級規則。"
+      ],
+      "original_path": "toolkits/model-routing.md",
+      "guide_path": "guides/model-routing.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GEdawmZu0ihQpkkK2zbcRLPGnAG",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GraPwa4yYiEp0qkVbUfcOgAAnpc",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Workflow Splitter",
+          "type": "Prompt",
+          "purpose": "產出 01-workflow-brief.md，明定逐步 Input、Output、成功條件與退回位置。",
+          "path": "toolkits/model-routing.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Routing and Compute Planner",
+          "type": "Prompt",
+          "purpose": "產出 02-routing-and-compute-plan.md，分配角色、模型強度及推理強度。",
+          "path": "toolkits/model-routing.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Open-weight Candidate Mapper",
+          "type": "Prompt",
+          "purpose": "產出 03-open-weight-candidate-map.md，列候選、理由、可用入口及限制。",
+          "path": "toolkits/model-routing.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Review Gate and Action Dashboard",
+          "type": "Prompt",
+          "purpose": "產出 04-routing-action-dashboard.html，呈現審查門檻、停損、回退與升級。",
+          "path": "toolkits/model-routing.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "9d7a89064d09bf5c76ad9c5e71d9a042eecadec946f3d70f0c627ed2360b9c65"
+    },
+    {
+      "id": "opus-workflow-upgrade",
+      "title": "Opus 工作流升級套件",
+      "category": "routing",
+      "description": "三支獨立 Prompt 改善意圖表達、跨模型評審與每週模型分工，輸出可重用模板、審查清單及路由表。",
+      "when_to_use": "舊 Prompt 在新模型表現退步、高風險產出準備交付，或想重整一週 AI 工作流時。",
+      "requirements": [
+        "原文以 Opus 4.7、GPT-5.4 Pro、Gemini 3.1 Pro 為例。",
+        "跨模型評審需選擇與製作者不同的模型，並提供原任務與輸入素材。",
+        "原文模型版本與能力描述依原始工具保留，實際可用性需依帳號。"
+      ],
+      "usage_steps": [
+        "Prompt 表現退步：跑意圖翻譯器，提供原 Prompt、受眾、失敗條件與品質範例。",
+        "準備交付：用另一模型跑同行評審，提供製作者輸出、原任務與來源。",
+        "規劃整週：跑模型路由器，提供工作類型、可用模型與風險。"
+      ],
+      "original_path": "toolkits/opus-workflow-upgrade.md",
+      "guide_path": "guides/opus-workflow-upgrade.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/F5MLwbPCri91A4kUfdTcAoE3n5e",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/LEhqwr7e3ilnpXkN8rbcsux7nsd",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Intent Translator（意圖翻譯器）",
+          "type": "Prompt",
+          "purpose": "按目的、品質、對齊三層補齊缺漏，產出可貼用提示詞。",
+          "path": "toolkits/opus-workflow-upgrade.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Cross-Model Peer Reviewer（跨模型同行評審）",
+          "type": "Prompt",
+          "purpose": "依完整性、指令忠實度、捏造與範圍四維評分，提出修正與人工升級決定。",
+          "path": "toolkits/opus-workflow-upgrade.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Model Router（模型路由器）",
+          "type": "Prompt",
+          "purpose": "建立每類任務的製作者／評審者搭配與理由。",
+          "path": "toolkits/opus-workflow-upgrade.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "ddf24ea1e60667bbb889332d51a4890c563bb697d16376be92404faf8eeed13b"
+    },
+    {
+      "id": "api-key-blast-radius",
+      "title": "API Key 止血包",
+      "category": "security",
+      "description": "依專案與外部服務盤點 API keys 及其他憑證的 metadata，檢查最小權限、花費上限、替身 key 與最壞損失，排出優先修整項目。",
+      "when_to_use": "部署新服務前、定期輪替時，或平台事故後想盤點每把憑證的影響範圍時。",
+      "requirements": [
+        "Claude、ChatGPT、Gemini 等網頁 AI 即可；準備專案、部署平台、外部服務及憑證用途資訊，不需提供任何 key 或密碼的值。"
+      ],
+      "usage_steps": [
+        "開新對話，複製完整 Key Inventory Prompt。",
+        "描述專案、部署平台與外部服務，核對 AI 草擬的憑證清單。",
+        "逐專案提供環境共用、權限、花費上限、自動儲值與保存位置的 metadata；不確定的項目保留為待確認。",
+        "確認背景摘要，檢查盤點表、前三項修整與洩漏後前十分鐘計畫。",
+        "重新核對目前官方帳單與權限設定；將不含秘密值的表格保存為 keys.md。"
+      ],
+      "original_path": "toolkits/api-key-blast-radius.md",
+      "guide_path": "guides/api-key-blast-radius.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/JyZlwlypNicQPkkteFpcmLzknGf",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AoZFwcvERiQzCPkmcpacCSe3nAA",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "爆炸半徑盤點（Key Inventory）",
+          "type": "Prompt",
+          "purpose": "逐憑證盤點權限、額度與撤銷入口，估計最壞損失，列出優先修整與事件初期動作。",
+          "path": "toolkits/api-key-blast-radius.md",
+          "when_to_use": "希望把專案憑證的外洩影響範圍、輪替與處理順序整理成可查閱表格時。",
+          "usage_steps": [
+            "貼上完整 Prompt，描述全部專案及外部服務。",
+            "補正憑證清單，只提供名稱、供應商、用途、環境與控制設定。",
+            "核對每項風險與設定入口，採用修整順序；自行保存 metadata 表格。"
+          ]
+        }
+      ],
+      "notes": "原文內嵌的平台參考標示查證日期為 2026-08-30；本次完整保存作者原文，未重新驗證其即時帳單功能或 UI 路徑。使用前需核對目前官方設定。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "aa7643bac72117398b04614e9e8087b6c17349fc5551cfac33d392fcc88098f1"
+    },
+    {
+      "id": "codex-security-bridge",
+      "title": "Codex Security Bridge Kit",
+      "category": "security",
+      "description": "用兩個 Prompt 判讀 Security Finding 的證據，並把 repository 掃描與 staging、production、第三方及維運驗證串成有明確範圍的清單。",
+      "when_to_use": "要判斷一則安全 Finding 是否成立，或準備上線、重要修復後，需要補齊掃描以外的驗證證據時。",
+      "requirements": [
+        "Codex 或可讀取授權 repository 的 coding agent；網頁 AI 亦可手動使用，需貼上 Finding、Coverage、相關程式片段或非敏感設定證據。"
+      ],
+      "usage_steps": [
+        "有掃描報告時，一次挑一則重要 Finding，複製 Prompt 1，提供完整 Finding、Coverage 與 repository 狀態。",
+        "補上可取得的產品安全規則與非敏感證據，核對攻擊路徑、反證、Severity、Confidence 及 Proof Gap。",
+        "把判讀報告交給 Prompt 2；也可在準備上線時直接使用 Prompt 2。",
+        "依層提供部署與安全控制情況，確認 scope、負責人及期限，保存 P0／P1／P2 證據清單。"
+      ],
+      "original_path": "toolkits/codex-security-bridge.md",
+      "guide_path": "guides/codex-security-bridge.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/ILxywRaMNiiroqk98JgcPxYqnke",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/NRpewfp9MijegCkmNRzcwLWvnDb",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Finding Evidence Explainer",
+          "type": "Prompt",
+          "purpose": "把單一 Finding 拆成攻擊路徑、證據與反證、Severity、Confidence、Coverage 和 Proof Gap，給出證據 verdict。",
+          "path": "toolkits/codex-security-bridge.md",
+          "when_to_use": "Finding 難以理解、團隊有爭議，或修復前需要確認範圍與證據時。",
+          "usage_steps": [
+            "貼上 Prompt 1 及一則完整 Finding。",
+            "提供 repository／commit／掃描範圍，必要時附 SECURITY.md 或 define-security-policy 輸出。",
+            "補充影響 verdict 的非敏感外部事實，確認允許的驗證環境。",
+            "檢查 Finding Evidence Review，修正背景事實後保存完整版本。"
+          ]
+        },
+        {
+          "name": "Production Blind-Spot Mapper",
+          "type": "Prompt",
+          "purpose": "分開 repository、staging、production、第三方與維運證據，建立含優先級、pass condition、evidence、owner 與期限的安全驗證地圖。",
+          "path": "toolkits/codex-security-bridge.md",
+          "when_to_use": "上線前、重大改版、修復重要 Finding 或 No findings 仍需補齊正式環境證據時。",
+          "usage_steps": [
+            "貼上 Prompt 2 及已有安全文件、Coverage、Finding Review。",
+            "依序提供部署系統、repository 證據、staging 能力與 production 控制的非敏感證據。",
+            "確認各未知項目的負責人、期限及審查範圍。",
+            "保存完整證據地圖，依 P0、P1、P2 順序收集證據；需另外授權才執行會改動環境的操作。"
+          ]
+        }
+      ],
+      "notes": "這組 Prompt 原文要求只讀審查與規劃，不會直接修 code 或操作 production；unknown 不等於通過，READY FOR REVIEWED SCOPE 僅涵蓋列明的範圍。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "b1710bde92f55ece3fae7d6e71091ba2cf96bd0731aef2453152ed02508f02e8"
+    },
+    {
+      "id": "chatgpt-chrome",
+      "title": "ChatGPT Chrome 六個實戰工具與使用方式",
+      "category": "communication",
+      "description": "文章正文中的六組可複製 Prompt，涵蓋訂閱報帳、餐廳空位比較、App Store 送審、退款草稿、海報設計與公開資料整理。",
+      "when_to_use": "需要讀取已登入網站、跨頁搬資料或進行多步網頁操作，並結合插件、Record & Replay 或長任務工具時。",
+      "requirements": [
+        "來源中的 Chrome 擴充功能及對應 AI 環境；依案例另需 Gmail 插件、Google Sheets、App Store Connect、Creative Production 或長任務模式。實際支援依目前產品介面與帳戶而定。"
+      ],
+      "usage_steps": [
+        "依文章安裝並選擇日常使用的 Chrome profile，登入相關服務。複製所需案例的完整 blockquote Prompt，替換括號中的應用名稱、目標、地點、日期或設計文案。按原文保留最終送出、送審與支付確認給人。"
+      ],
+      "original_path": "toolkits/chatgpt-chrome.md",
+      "guide_path": "guides/chatgpt-chrome.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/UwgEwtxY9i5UoFkcEE8cCFannSh",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/UwgEwtxY9i5UoFkcEE8cCFannSh",
+      "article_title": "ChatGPT Chrome 扩展高级实践：6 个自动化日常任务的真实案例",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "订阅自动发票报销",
+          "type": "Prompt",
+          "purpose": "用 Gmail 讀取上月軟體訂閱收據與 PDF，整理供應商、日期、幣別與金額，再在 Google Sheets 建明細、分類、小計與公式。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "热门餐厅预订与可用性比较",
+          "type": "Prompt",
+          "purpose": "比較五家候選餐廳的官方訂位空位、價格與規則，經使用者選擇後填表，停在最終確認提交前。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "iOS应用用于评测",
+          "type": "Prompt",
+          "purpose": "依 Apple 官方規則整理版本資訊、多語說明、截圖與問卷，也可將示範流程錄成 Skill；原 Prompt 要求停在提交審核前。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "申请退款和谈判",
+          "type": "Prompt",
+          "purpose": "整理續費日期、方案、金額與訂單號，查退款條款並擬定申訴策略，產出英文客服申訴信草稿。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "浏览Pinterest查看好设计并创建自己的海报",
+          "type": "Prompt",
+          "purpose": "在瀏覽設計參考時分析版面、字級、色彩與留白，交給 Creative Production 結合自己的主題、尺寸、文案與品牌元素生成新海報。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "批量抓取反爬取网站数据",
+          "type": "Prompt",
+          "purpose": "依指定公開頁面整理日期、標題、摘要、互動數據與來源連結為 CSV，使用停止條件與每五十筆進度回報，禁止點擊互動按鈕。",
+          "path": "toolkits/chatgpt-chrome.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "原文最後一組使用『/目标』措辭，原 Prompt 保留；實際指令請依工具介面確認。原文對反爬限制的描述是案例敘述，操作仍須遵守網站授權與限制。來源圖片含登入授權網址，未收錄圖片或其網址。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "1fb7423dd798550ed1fd10f21f8fbe8e649aee4fc023d8ee3323f6d57b777c1d"
+    },
+    {
+      "id": "claude-output-styles",
+      "title": "三套 Output Style 一鍵安裝包",
+      "category": "communication",
+      "description": "三套 Claude Code Output Style 原始文件，以及安裝與專屬風格校準 Prompt。",
+      "when_to_use": "AI 回報的術語、句子密度或結構不符合自己的技術背景，想讓技術小白、PM、vibe coder 或工程師更容易理解輸出時。",
+      "requirements": [
+        "已安裝 Claude Code。原始 style 包含 name、description、keep-coding-instructions: true 的 frontmatter。安裝到全域 ~/.claude/output-styles/ 或目前專案 .claude/output-styles/，依原文使用 /output-style 或 /config 切換。"
+      ],
+      "usage_steps": [
+        "手動安裝可從 assets/claude-output-styles/ 取得三份 .md，複製到選定的 output-styles 資料夾，再切換風格。也可將原文安裝 Prompt 交給 Claude Code，回答全域或專案、啟用哪套風格兩個問題。客製化時貼一段難讀的 AI 回覆，提供技術背景、討厭的寫法與團隊固定用語，挑選五種改寫並迭代。"
+      ],
+      "original_path": "toolkits/claude-output-styles.md",
+      "guide_path": "guides/claude-output-styles.md",
+      "related_paths": [],
+      "attachments": [
+        {
+          "name": "output-styles-pack.zip",
+          "path": "assets/claude-output-styles/output-styles-pack.zip",
+          "source_url": "https://kcn4ucks9zgj.feishu.cn/file/VNuTbjU82omKNWxET4Icv2F8njh",
+          "contents": [
+            "beginner-tech-translator.md",
+            "pm-ste100-brief.md",
+            "engineer-tldr.md"
+          ]
+        }
+      ],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/GA25wAYp5ie39AkwPhacaq7RnfJ",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/JXIKwzNGQiDFORkMmGDc7KGvn1c",
+      "article_title": "你以为 Claude 变笨，其实是沟通出错：三套 Output Style 拆解与一键安装包",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "一键安装 Prompt",
+          "type": "Prompt",
+          "purpose": "下載三套 Output Style、放入指定位置、驗證 frontmatter，並在保留既有設定的前提下啟用使用者選定的風格。",
+          "path": "toolkits/claude-output-styles.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Tech Translator",
+          "type": "Output Style",
+          "purpose": "給無工程背景的使用者。保留真實技術詞、附白話解釋，每次交代做什麼、為什麼、是否成功與下一步。",
+          "path": "assets/claude-output-styles/beginner-tech-translator.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "STE100 Brief",
+          "type": "Output Style",
+          "purpose": "給 PM 與有經驗的 vibe coder。以短句、主動語態、固定詞彙和結果優先回報，說明產品影響並標示假設。",
+          "path": "assets/claude-output-styles/pm-ste100-brief.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "Engineer TL;DR",
+          "type": "Output Style",
+          "purpose": "給工程師。用簡短同事式回報先說改了什麼、是否可用與意外狀況，省略已知術語解釋。",
+          "path": "assets/claude-output-styles/engineer-tldr.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "风格客制化 Prompt",
+          "type": "Prompt",
+          "purpose": "診斷難讀回覆的問題，產出五種風格供挑選與混合，從實際選擇提煉規則，生成可安裝的專屬 Output Style。",
+          "path": "toolkits/claude-output-styles.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "同名文件覆寫與 settings.local.json 修改依原 Prompt 要先確認、備份並合併；客製化改寫應保留原回覆的每個事實、風險與下一步。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "053f6dc1dd8b9991e193a553e8db26ae77021e4bb02200f54195c534e958d071"
+    },
+    {
+      "id": "html-workpage",
+      "title": "理解防護套件",
+      "category": "communication",
+      "description": "用自我訪談檢查是否理解自己的作品，再把說明升級成可分享的單檔 HTML 工作頁。",
+      "when_to_use": "已完成 AI 輔助 App、agent、工作流、原型或儀表板，準備放進作品集或 README；或已有 Markdown 說明想提高理解與瀏覽效率。",
+      "requirements": [
+        "支援多輪對話的 Claude、ChatGPT 或 Gemini。HTML 生成需要完整原始 artifact 與可輸出完整程式碼的模型；來源建議 Claude 或 Claude Code。"
+      ],
+      "usage_steps": [
+        "先使用理解自我訪談，逐一回答『做了什麼、為什麼這樣做、何時會壞、學到了什麼』，生成 Markdown 說明。將說明交給第二組 Prompt，生成單檔 HTML 工作頁。已有說明可直接用第二組。"
+      ],
+      "original_path": "toolkits/html-workpage.md",
+      "guide_path": "guides/html-workpage.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/IZiswT4f1ieS4vkkxezcXy38nOb",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/TzLSwfafwi7QzrkDiDLcIHhlndf",
+      "article_title": "为什么人类工程师用HTML取代Markdown：6个值+2个成本+HTML提示工具包",
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "理解自我访谈",
+          "type": "Prompt",
+          "purpose": "以一題一題的技術訪談追問作品的用途、選擇、失敗情境與學習，產出四段可附在 README 或作品旁的 Explanation Artifact。",
+          "path": "toolkits/html-workpage.md",
+          "when_to_use": "",
+          "usage_steps": []
+        },
+        {
+          "name": "理解→HTML工作页",
+          "type": "Prompt",
+          "purpose": "將 Markdown 說明變成可分享、可快速瀏覽的單檔 HTML，包含視覺依賴圖及影響範圍標示。",
+          "path": "toolkits/html-workpage.md",
+          "when_to_use": "",
+          "usage_steps": []
+        }
+      ],
+      "notes": "應以真實專案與使用者回答為依據；生成 HTML 後仍需自行開啟並驗證內容、連結與圖示。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "dccdc20cc120dc1fb696b02e6ae887f7d2bfe8faa18991025a844690d2c7f230"
+    },
+    {
+      "id": "token-efficiency-self-check",
+      "title": "Token 效率自我體檢",
+      "category": "context",
+      "description": "將四層 Token 浪費框架與 Agent KISS Checklist 套用到個人使用習慣，產出診斷、對話交接摘要或 Agent 架構審查報告。",
+      "when_to_use": "Token 消耗偏高、長對話逐漸失去效率，或準備整理 Agent 的 system prompt、reference 與快取架構時。",
+      "requirements": [
+        "可閱讀長文字並進行多輪問答的 Claude、ChatGPT、Gemini 等 AI；第三個 Prompt 需提供 Agent 架構或 code，最好有實際 Token 與 cache hit rate 紀錄。"
+      ],
+      "usage_steps": [
+        "一般使用者先複製 Prompt 1 的完整區塊到 AI 對話，依提問提供平台、對話、文件與 Plugin 使用情況。",
+        "如果長對話是主要問題，使用 Prompt 2，提供完整歷史、任務及必須保留的決策；核對摘要後貼到新對話。",
+        "Agent 開發者可直接用 Prompt 3，提供 system prompt、架構、reference 處理方式與可取得的用量紀錄。",
+        "依報告的優先項目進行修改，使用真實用量紀錄驗證改動效果。"
+      ],
+      "original_path": "toolkits/token-efficiency-self-check.md",
+      "guide_path": "guides/token-efficiency-self-check.md",
+      "related_paths": [],
+      "attachments": [],
+      "article_url": "https://kcn4ucks9zgj.feishu.cn/wiki/K83LwINk9iuiNWkFr7zc6mUFnOc",
+      "tool_url": "https://kcn4ucks9zgj.feishu.cn/wiki/QL14wIjwBiXadikiFSvcLFu8nee",
+      "article_title": null,
+      "source_variants": [],
+      "tools": [
+        {
+          "name": "Token 浪費模式診斷",
+          "type": "Prompt",
+          "purpose": "分辨 PDF 膨脹、對話歷史累積、Context Dump 與 Plugin Boot Tax 的影響，整理優先修正順序。",
+          "path": "toolkits/token-efficiency-self-check.md",
+          "when_to_use": "知道 Token 消耗偏高，卻不清楚浪費發生在哪一層時。",
+          "usage_steps": [
+            "貼上 Prompt 1。",
+            "回答使用平台、互動頻率、對話長度、文件輸入、Plugin 與 Agent 建置情況。",
+            "核對情境摘要，再採用診斷報告中的第一步行動。"
+          ]
+        },
+        {
+          "name": "對話瘦身術",
+          "type": "Prompt",
+          "purpose": "把冗長對話整理成含任務、決策、參考資料、目前狀態與未定問題的 Context Handoff。",
+          "path": "toolkits/token-efficiency-self-check.md",
+          "when_to_use": "想開新對話繼續工作，同時保留已確立的決策與限制時。",
+          "usage_steps": [
+            "貼上 Prompt 2，說明目前任務。",
+            "提供完整對話歷史；太長時分段並使用 [continue] 標記。",
+            "列出不可遺漏的資訊，檢查摘要後貼到新對話。"
+          ]
+        },
+        {
+          "name": "Agent Context 體檢",
+          "type": "Prompt",
+          "purpose": "依 Index、Prepare、Cache、Scope、Measure 五項 KISS 規則檢查 Agent Context 架構，產出具體修改建議。",
+          "path": "toolkits/token-efficiency-self-check.md",
+          "when_to_use": "API Agent 的 input tokens 偏高，或想檢查 retrieval、穩定內容快取與觀測紀錄時。",
+          "usage_steps": [
+            "貼上 Prompt 3。",
+            "提供框架、system prompt、Agent loop 或架構，以及 Token、快取與 reference 處理情況。",
+            "確認審查範圍，依逐條報告修改並以真實紀錄比較前後用量。"
+          ]
+        }
+      ],
+      "notes": "原文中的模型價格、Token 倍數與節省比例是診斷範例，實際效果需依當前平台與使用紀錄核對。原文含巢狀三反引號，內容已完整保留。",
+      "original_language_preserved": true,
+      "captured_at": "2026-10-05",
+      "published_sha256": "b308f01e8ae18f92d4f09bc10330906ac41ebc6ebbe5d972a4eea3a0d35f22d7"
+    }
+  ]
+}

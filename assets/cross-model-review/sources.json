@@ -1,0 +1,57 @@
+{
+  "files": [
+    {
+      "path": "assets/cross-model-review/codex-review-gate.py",
+      "sha256": "c83dfdcf06f83e9d773b391d1cfdfd6d66fe7d2322517f3326a8be0e541023b4",
+      "bytes": 6246,
+      "kind": "原作者公開下載原始檔",
+      "source_url": "https://garytalksstuff.com/kits/codex-review-gate.py"
+    },
+    {
+      "path": "assets/cross-model-review/codex-peer-review.zip",
+      "sha256": "3228b196f074bac39a1a19365ed184ebd3e91c0eb4d1de28f4779f3630d37f13",
+      "bytes": 6679,
+      "kind": "原作者公開下載壓縮檔",
+      "source_url": "https://garytalksstuff.com/kits/codex-peer-review.zip"
+    },
+    {
+      "path": "assets/cross-model-review/downloaded/codex-peer-review/SKILL.md",
+      "sha256": "0912a03fbef1ef64e9d33b03e28839cb6aedeec2800b49c6a1e9ec7f6856c775",
+      "bytes": 15536,
+      "kind": "從下載 ZIP 精確擷取的唯一文件",
+      "source_url": "https://garytalksstuff.com/kits/codex-peer-review.zip"
+    },
+    {
+      "path": "assets/cross-model-review/inline/codex-review-gate.py",
+      "sha256": "4030287cc4aae9f8b7718e00aaaab92d6bfbc930c34e02b43b5db2ed065c496c",
+      "bytes": 6029,
+      "kind": "飛書內嵌原始碼，僅抽出程式碼不執行",
+      "source_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AvlYwcbAHi0rAHkEKivc2kcOnQy"
+    },
+    {
+      "path": "assets/cross-model-review/inline/codex-peer-review/SKILL.md",
+      "sha256": "79f0e6017418d57b48e3dce686e5971c64bacf43be4396517fc2ca27b2ef150a",
+      "bytes": 15513,
+      "kind": "飛書內嵌 Skill 原文，僅抽出不執行",
+      "source_url": "https://kcn4ucks9zgj.feishu.cn/wiki/AvlYwcbAHi0rAHkEKivc2kcOnQy"
+    }
+  ],
+  "download_vs_inline_skill_identical_bytes": false,
+  "zip_entries": [
+    {
+      "path": "codex-peer-review/",
+      "size": 0
+    },
+    {
+      "path": "codex-peer-review/SKILL.md",
+      "size": 15536
+    }
+  ],
+  "license_in_zip": false,
+  "notes": [
+    "ZIP 僅含 codex-peer-review/SKILL.md，未附 LICENSE 檔案。",
+    "下載檔與飛書內嵌來源均獨立保留；SHA256 差異代表來源版本或格式不同，沒有以其中一版覆蓋另一版。",
+    "所有檔案只下載、讀取及複製，未執行或安裝。"
+  ],
+  "download_vs_inline_hook_identical_bytes": false
+}
