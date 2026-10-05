@@ -91,7 +91,7 @@ writing-great-skills 在官方已更名；保存更名前 commit 的原檔，另
 ## 來源
 
 - [來源文章](https://kcn4ucks9zgj.feishu.cn/wiki/ZWIgwxFMMi7tQokVmKoc2KrfnAh)
-- [飛書工具頁](https://github.com/mattpocock/skills)
+- [官方工具來源](https://github.com/mattpocock/skills)
 
 飛書來源可能需要原帳號的存取權；本倉庫內的工具與附件可以直接閱讀、下載。
 
