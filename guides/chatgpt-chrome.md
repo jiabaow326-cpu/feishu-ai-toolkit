@@ -6,7 +6,7 @@
 
 ## 工具原文
 
-[開啟完整原文](../toolkits/chatgpt-chrome.md) · [下載／檢視純文字](https://raw.githubusercontent.com/jiabaow326-cpu/feishu-ai-toolkit/main/toolkits/chatgpt-chrome.md)
+[開啟完整原文](../toolkits/chatgpt-chrome.md) · [下載／檢視純文字](https://raw.githubusercontent.com/jiabaow326-cpu/shen-one-san-ai-toolkit/main/toolkits/chatgpt-chrome.md)
 
 提示詞、程式碼與設定保留來源原文。要複製提示詞時，選取該項完整區塊；若原文含巢狀程式碼區塊，請使用純文字連結，避免漏掉後半段。
 

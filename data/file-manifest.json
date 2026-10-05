@@ -493,8 +493,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 549,
-      "sha256": "40bb98651929c693f86b7856d3cfb6e0afc903de611a4217dd481ee3d649bf61"
+      "bytes": 575,
+      "sha256": "6205fcdc08787445164ac5e0c3162291d1fd9487df77532c32f864d2edd17f97"
     },
     {
       "path": "data/tools.json",
@@ -503,153 +503,153 @@
     },
     {
       "path": "guides/agent-ready-product.md",
-      "bytes": 2721,
-      "sha256": "2e90a7099c78e5158505e1cb044053d51f46225b87030f438a9d8e615032bcfe"
+      "bytes": 2727,
+      "sha256": "63b85827fbc969feea70c1ce35fcdf385a85e2294a130b60e46fdbffc98f9150"
     },
     {
       "path": "guides/ai-builder.md",
-      "bytes": 2764,
-      "sha256": "7f1cbffe20ea8d768b1e29e901e2c3d06b75af716fb2175f3610ef9d033cd24d"
+      "bytes": 2770,
+      "sha256": "6b38b626a2cae70cc21485d3090d279b6ae966f305f9ef7702901830fd496564"
     },
     {
       "path": "guides/ai-instructions-rebuild.md",
-      "bytes": 3022,
-      "sha256": "1947d483f823bcdde0a720e7afcc6f76ad24a618d5f2adb2d8ae0d0328be3923"
+      "bytes": 3028,
+      "sha256": "8893f9224ad20f7afd6dd28fcc914305e813490e41e6f20dd010eff5521a2ab7"
     },
     {
       "path": "guides/ai-routing-system.md",
-      "bytes": 2493,
-      "sha256": "cc8f96b77e93d91394ffca8b55d39584be2dd6fd25577055b89e4cee7f544213"
+      "bytes": 2499,
+      "sha256": "b86d05fb1fd4a468ce2f60393eadb976ac248e06661e0fabd2a42d67cc40188e"
     },
     {
       "path": "guides/api-key-blast-radius.md",
-      "bytes": 2636,
-      "sha256": "6bd53686d04098ad93b5046dbe4a92e2187b5598097b422303f3ea249be80232"
+      "bytes": 2642,
+      "sha256": "734e61893d94058f27b4794ec51529c9fcf76cbde65de97b63a899131b2fe357"
     },
     {
       "path": "guides/astra-experience.md",
-      "bytes": 2123,
-      "sha256": "f266ed89e99af92b589a20fd4abe8fe9e2a241a777b07952c94b4f74b95b9ef3"
+      "bytes": 2129,
+      "sha256": "0a1af57e2d4110dc61b5b41e75592c34abd6eba03523fb8d44c118f8addd45af"
     },
     {
       "path": "guides/automation-choice.md",
-      "bytes": 3669,
-      "sha256": "ad42bd6ba7a17373a6202c1a3fe038c2ca42b31fa29482c95a2d33dbbda22bd4"
+      "bytes": 3675,
+      "sha256": "bbe280576513f3a371197befb105d6e2a47ed8e5236403c1333f8efa07691636"
     },
     {
       "path": "guides/brownfield-safe-change.md",
-      "bytes": 4281,
-      "sha256": "7bbf5aebeddcd4ca9161e265cc0b7caf3b2b7214c38cc0ed2875d1693585371d"
+      "bytes": 4287,
+      "sha256": "d9b7346465ec1c6dbb6798d2addd535d8158e3c43a7b4238edbe32fd8aeff37e"
     },
     {
       "path": "guides/chatgpt-chrome.md",
-      "bytes": 3489,
-      "sha256": "fde38759142973d1956f0f1b2c1f70837df66032beded8c06f7c011452f4b5b8"
+      "bytes": 3495,
+      "sha256": "0bad2aef78cc4939568384cdfc5dfd693a533a7cddd41bd8ba51d9feaf5b95f2"
     },
     {
       "path": "guides/claude-hooks.md",
-      "bytes": 4354,
-      "sha256": "07306caa6e0d26bc8b019c5391727c813b1e03d6822a40de59ebba6ea587b35a"
+      "bytes": 4360,
+      "sha256": "6c9937c135e65c1895cb3e81616d41fd90e19494f6390284a26ddb9e1ba00888"
     },
     {
       "path": "guides/claude-md-checkup.md",
-      "bytes": 1730,
-      "sha256": "8886e10644c213be4a4367ea33b98878231e4c2800c7bf2a560f747826eb57ac"
+      "bytes": 1736,
+      "sha256": "df801828aa22b2f30063eece484d98c6d263235d4a5151582a885cf6ac7e464a"
     },
     {
       "path": "guides/claude-output-styles.md",
-      "bytes": 3329,
-      "sha256": "d2cb0926dce0c8067effb342112e82a2c100b6f140dde0247aeb66ea6d5580aa"
+      "bytes": 3335,
+      "sha256": "2490f72beed9b4188b76d1ceb63bfab4adaf72e1c413b4d384159fc903805a3f"
     },
     {
       "path": "guides/codex-security-bridge.md",
-      "bytes": 3479,
-      "sha256": "86e11d0427c8c68fea0eacdae6ee0a5738e8eb7e96f7039773b3d817cc59771a"
+      "bytes": 3485,
+      "sha256": "778adcec9be988af8527d4cf560859203f35f08d209bea07decc6d3626a9b73b"
     },
     {
       "path": "guides/codex-task-command.md",
-      "bytes": 2224,
-      "sha256": "adab7a46b44c1a4a626e2f7651a918b45b2b4b638757310fffbb3add12d2ff09"
+      "bytes": 2230,
+      "sha256": "2fa33b258bc7da132363d04d0f022fb1a8a3d294bad2261099df5235bcc355b0"
     },
     {
       "path": "guides/codex-workflow-council.md",
-      "bytes": 2511,
-      "sha256": "1c7b4dcb22af6cb739f06a10ce2cb00d0cccdb21dc25f1e0a367fbcbc77e5b4c"
+      "bytes": 2517,
+      "sha256": "ff5b8d759891e6d93a70b56b6e9f5d07be69477dafce8e66c8a9127b9ebcf4cf"
     },
     {
       "path": "guides/cross-model-review.md",
-      "bytes": 3502,
-      "sha256": "49b524c1515b255c726c2464cd4f8cf6368127b8c86ccdc3021757432b5c0728"
+      "bytes": 3508,
+      "sha256": "3946d9a5de3e5c80ee66de8bffd685147d88799db381934a5d8f9c9542d64865"
     },
     {
       "path": "guides/dynamic-workflows.md",
-      "bytes": 3783,
-      "sha256": "7680ecca88f570e802479a9b1d2162ea33338a2980b339c8f0e9ea5c9165d3e9"
+      "bytes": 3789,
+      "sha256": "5efe208a286937e5e4a2284ecaf6974f1a7d18088f96d5ae414458f101f6d908"
     },
     {
       "path": "guides/enterprise-ai-implementation.md",
-      "bytes": 5152,
-      "sha256": "ca3ab8559e2c539bc0ed751442e14d2961c088f85af43a6a46dd76d93e4553f2"
+      "bytes": 5158,
+      "sha256": "33acb565542da4e10dbcd99ec2d48d5eec7815c263e769f0fe15a041a10b69ce"
     },
     {
       "path": "guides/goal-taste.md",
-      "bytes": 2235,
-      "sha256": "2334b7344873e405b98790aae847965491e3de2676b4176fd2e6eaf489064de7"
+      "bytes": 2241,
+      "sha256": "1dd5efdc43d3d39cc61aa51ed31284fb75fc1fabef8f4af82bc499ef5cf63596"
     },
     {
       "path": "guides/graph-workflow.md",
-      "bytes": 3615,
-      "sha256": "308b92a42761a4216517d2f797e66c3383b7554392b61f8f599e164b600fc3db"
+      "bytes": 3621,
+      "sha256": "b4cd16d8877acc9753c68e39ca4a69627096a89a7749de9b5725edfbf4b08c3a"
     },
     {
       "path": "guides/html-workpage.md",
-      "bytes": 2195,
-      "sha256": "dd91b1b13bfaa4f2bbf3d7331a645d308c574021eadab30fab684076fccd20d2"
+      "bytes": 2201,
+      "sha256": "2b2929ae93eefae0475e48ae0334db32ba561828c5aa0bb3f22b4baeeaf5aa42"
     },
     {
       "path": "guides/human-sop-agentic-workflow.md",
-      "bytes": 2774,
-      "sha256": "84c3dfc933b25313c73cca9cefc043d55695fc9e014f8bc914786cd0ddef7411"
+      "bytes": 2780,
+      "sha256": "86f2681a6f63fa5ebf867d14030fd8f0c506df7c37e51a05fe0460f48c6df4af"
     },
     {
       "path": "guides/loop-engineering.md",
-      "bytes": 2358,
-      "sha256": "20f60036992c470bad6eba5ddf5d665db23f7d926655ce700612249a21b2f07c"
+      "bytes": 2364,
+      "sha256": "2c76e9f63e3fc36eeeaca2d22b9b46cf85721bc0d9964264be92037fbbee51ab"
     },
     {
       "path": "guides/matt-pocock-workflow.md",
-      "bytes": 7908,
-      "sha256": "e3a76ca3d577f3c2b5bdea8b705c84597c87520bad46e031e2b581c016b944db"
+      "bytes": 7914,
+      "sha256": "6cef616bafb30b8cd8fe92da54c27ef9c36735c1453d4e5bace36bda5bc51174"
     },
     {
       "path": "guides/model-routing.md",
-      "bytes": 2423,
-      "sha256": "dd139f385bb8fa8d9cf9d57b0a1abef9fe0f46a12988b926e7a3c4a247b92f34"
+      "bytes": 2429,
+      "sha256": "be1eaa5b34740cb1a4b9effcbea64f4584abb54ea3de86de80a01af3c563c813"
     },
     {
       "path": "guides/opus-workflow-upgrade.md",
-      "bytes": 2292,
-      "sha256": "68777889a1294fbe4aea8f93b7c646e4a97e17036be898eb971d4685b49e0f78"
+      "bytes": 2298,
+      "sha256": "d16110baa7fcf341d4b6dc3d295447bb65cd79016cfba4880c3fe29bfc66a7c3"
     },
     {
       "path": "guides/skill-craftsman.md",
-      "bytes": 2292,
-      "sha256": "96d83602f7baabbf01ee7b61154ad9ee7c4f27d160e16034ebf2030c44f00980"
+      "bytes": 2298,
+      "sha256": "5f43f688af18af0f387608af79402a0f649beae298baab2e68c8c7ba28fee9e6"
     },
     {
       "path": "guides/task-brief.md",
-      "bytes": 2178,
-      "sha256": "5f89904afd10691cef62606342fc5ee02ec43b6b158c13625737e1ab41330298"
+      "bytes": 2184,
+      "sha256": "431186e09f2d4ea07befe07ec605edb926c6869a81d922238ed1a667246d7475"
     },
     {
       "path": "guides/token-efficiency-self-check.md",
-      "bytes": 3662,
-      "sha256": "719ccae666273b049fe04e76667229abd13a4d72d24bf648e2106769b50d9077"
+      "bytes": 3668,
+      "sha256": "58b571eaa17874fbfc95bb14492d6293911e8980dac1edaad9bd615dc162d3e6"
     },
     {
       "path": "README.md",
-      "bytes": 10602,
-      "sha256": "1b976651ba4f26af938ac993f7303d505c11dfb22b110db40ebb28d573442640"
+      "bytes": 10606,
+      "sha256": "00ecd3d92df244cfc33a024dbfa6eb67d88d838689d4cfd7f4f84a93c5eb0109"
     },
     {
       "path": "toolkits/agent-ready-product.md",
